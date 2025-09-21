@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.client;
+package com.carcontrol.app.client;
 
 import android.content.ClipData;
 import android.view.MotionEvent;
@@ -8,8 +8,8 @@ import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.buffer.BufferStream;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.buffer.BufferStream;
 
 public class ControlPacket {
   private final MyFunctionByteBuffer write;

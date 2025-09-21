@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.adb;
+package com.carcontrol.app.adb;
 
 public interface AdbBase64 {
   String encodeToString(byte[] data);

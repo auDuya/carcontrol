@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.server.helper;
+package com.carcontrol.server.helper;
 
 import android.annotation.TargetApi;
 import android.content.AttributionSource;
@@ -6,7 +6,7 @@ import android.content.Context;
 import android.content.MutableContextWrapper;
 import android.os.Build;
 import android.os.Process;
-import top.eiyooooo.easycontrol.server.utils.Workarounds;
+import com.carcontrol.server.utils.Workarounds;
 
 public final class FakeContext extends MutableContextWrapper {
 

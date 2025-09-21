@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-  namespace 'top.eiyooooo.easycontrol.app'
+  namespace 'com.carcontrol.app'
   compileSdk 34
 
   defaultConfig {
-    applicationId 'top.eiyooooo.easycontrol.app'
+    applicationId 'com.carcontrol.app'
     minSdk 21
     targetSdk 34
     versionCode 20000

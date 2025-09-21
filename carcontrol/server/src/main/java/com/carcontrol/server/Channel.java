@@ -448,7 +448,7 @@ public class Channel {
         Surface surface = MediaCodec.createPersistentInputSurface();
         android.hardware.display.DisplayManager displayManager = DisplayManager.class.getDeclaredConstructor(Context.class).newInstance(FakeContext.get());
         int flags = getVirtualDisplayFlags();
-        VirtualDisplay virtualDisplay = displayManager.createVirtualDisplay("carcontrol_for_car", width, height, density, surface, flags);
+        VirtualDisplay virtualDisplay = displayManager.createVirtualDisplay("carcontrol", width, height, density, surface, flags);
         return new Pair<>(virtualDisplay, surface);
     }
 

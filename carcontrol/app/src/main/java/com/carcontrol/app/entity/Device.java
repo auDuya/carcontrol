@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.entity;
+package com.carcontrol.app.entity;
 
 public class Device {
   public static final int TYPE_NORMAL = 1;

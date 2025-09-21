@@ -1,4 +1,4 @@
-name: carontrol
+name: carcontrol
 
 on:
   workflow_dispatch:

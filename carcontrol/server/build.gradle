@@ -32,14 +32,14 @@ android {
   task copyRelease(type: Copy) {
     dependsOn 'assembleRelease'
     from file('build/outputs/apk/release/server-release-unsigned.apk')
-    into file('../app/src/main/res/raw/')
+    into file('./app/src/main/res/raw/')
     rename('server-release-unsigned.apk', 'carcontrol_server.jar')
   }
 
   task copyDebug(type: Copy) {
     dependsOn 'assembleDebug'
     from file("build/outputs/apk/debug/server-debug.apk")
-    into file('../app/src/main/res/raw/')
+    into file('./app/src/main/res/raw/')
     rename('server-debug.apk', 'carcontrol_server.jar')
   }
 

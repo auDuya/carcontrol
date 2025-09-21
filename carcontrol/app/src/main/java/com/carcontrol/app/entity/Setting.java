@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.entity;
+package com.carcontrol.app.entity;
 
 import android.content.SharedPreferences;
 

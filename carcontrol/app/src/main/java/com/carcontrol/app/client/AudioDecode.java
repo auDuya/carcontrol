@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.client;
+package com.carcontrol.app.client;
 
 import android.media.AudioAttributes;
 import android.media.AudioFormat;
@@ -11,7 +11,7 @@ import android.os.Build;
 import android.os.Handler;
 
 import androidx.annotation.NonNull;
-import top.eiyooooo.easycontrol.app.entity.AppData;
+import com.carcontrol.app.entity.AppData;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

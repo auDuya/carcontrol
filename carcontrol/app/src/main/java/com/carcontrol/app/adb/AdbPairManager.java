@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.adb;
+package com.carcontrol.app.adb;
 
 import android.os.Build;
 import android.sun.misc.BASE64Encoder;
@@ -8,7 +8,7 @@ import android.sun.security.x509.*;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import io.github.muntashirakon.adb.AbsAdbConnectionManager;
-import top.eiyooooo.easycontrol.app.entity.AppData;
+import com.carcontrol.app.entity.AppData;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

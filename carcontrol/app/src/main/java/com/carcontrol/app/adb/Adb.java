@@ -89,8 +89,8 @@ public class Adb {
 
   public final void startServer() {
     try {
-      if (BuildConfig.ENABLE_DEBUG_FEATURE || !runAdbCmd("ls /data/local/tmp/easycontrol_*").contains(serverName)) {
-        runAdbCmd("rm /data/local/tmp/easycontrol_* ");
+      if (BuildConfig.ENABLE_DEBUG_FEATURE || !runAdbCmd("ls /data/local/tmp/carcontrol_*").contains(serverName)) {
+        runAdbCmd("rm /data/local/tmp/carcontrol_* ");
         pushFile(AppData.main.getResources().openRawResource(R.raw.easycontrol_server), serverName);
       }
       if (serverShell != null) serverShell.close();

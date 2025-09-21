@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.helper;
+package com.carcontrol.app.helper;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -11,11 +11,11 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
-import top.eiyooooo.easycontrol.app.R;
-import top.eiyooooo.easycontrol.app.databinding.ItemReconnectBinding;
-import top.eiyooooo.easycontrol.app.databinding.ModuleDialogBinding;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.entity.Device;
+import com.carcontrol.app.R;
+import com.carcontrol.app.databinding.ItemReconnectBinding;
+import com.carcontrol.app.databinding.ModuleDialogBinding;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.entity.Device;
 
 public class ConnectHelper {
     public static boolean status;

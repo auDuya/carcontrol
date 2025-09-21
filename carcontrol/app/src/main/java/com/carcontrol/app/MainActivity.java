@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app;
+package com.carcontrol.app;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -12,13 +12,13 @@ import java.util.UUID;
 
 import android.view.animation.LinearInterpolator;
 
-import top.eiyooooo.easycontrol.app.client.Client;
-import top.eiyooooo.easycontrol.app.databinding.ActivityMainBinding;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.entity.Device;
-import top.eiyooooo.easycontrol.app.helper.DeviceListAdapter;
-import top.eiyooooo.easycontrol.app.helper.PublicTools;
-import top.eiyooooo.easycontrol.app.helper.ConnectHelper;
+import com.carcontrol.app.client.Client;
+import com.carcontrol.app.databinding.ActivityMainBinding;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.entity.Device;
+import com.carcontrol.app.helper.DeviceListAdapter;
+import com.carcontrol.app.helper.PublicTools;
+import com.carcontrol.app.helper.ConnectHelper;
 
 public class MainActivity extends Activity {
   // 设备列表

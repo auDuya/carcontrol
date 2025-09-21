@@ -258,23 +258,22 @@ public class DeviceListAdapter extends BaseExpandableListAdapter {
     itemSetDeviceBinding.buttonYes.setOnClickListener(v -> {
       try {
         if (Adb.getStringResponseFromServer(device, "setNightMode", "nightMode=2").contains("success")) {
-          PublicTools.logToast(AppData.main.getString(R.string.change_night_mode_success));
+          PublicTools.logToast(AppData.main.getString(R.string.night_mode_yes));
         } else throw new Exception();
       } catch (Exception ignored) {
-        PublicTools.logToast(AppData.main.getString(R.string.change_night_mode_failed));
+          PublicTools.logToast(AppData.main.getString(R.string.change_night_mode_failed));
       }
-      itemSetDeviceBinding.title.setText(getCurrentNightMode(context, device));
-    });
+    }
+    
     itemSetDeviceBinding.buttonNo.setOnClickListener(v -> {
       try {
         if (Adb.getStringResponseFromServer(device, "setNightMode", "nightMode=1").contains("success")) {
-          PublicTools.logToast(AppData.main.getString(R.string.change_night_mode_success));
+          PublicTools.logToast(AppData.main.getString(R.string.night_mode_no));
         } else throw new Exception();
       } catch (Exception ignored) {
-        PublicTools.logToast(AppData.main.getString(R.string.change_night_mode_failed));
+          PublicTools.logToast(AppData.main.getString(R.string.change_night_mode_failed));
       }
-      itemSetDeviceBinding.title.setText(getCurrentNightMode(context, device));
-    });
+    }
     
     itemSetDeviceBinding.buttonChange.setOnClickListener(v -> {
       dialog.cancel();

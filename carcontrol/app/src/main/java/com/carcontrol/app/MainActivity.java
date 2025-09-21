@@ -13,7 +13,7 @@ import java.util.UUID;
 import android.view.animation.LinearInterpolator;
 
 import com.carcontrol.app.client.Client;
-import com.carcontrol.app.databinding.ActivityMainBinding;
+import com.carcontrol.app.databinding.ActivityMainBinding2;
 import com.carcontrol.app.entity.AppData;
 import com.carcontrol.app.entity.Device;
 import com.carcontrol.app.helper.DeviceListAdapter;
@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
   private ConnectHelper connectHelper;
 
   // 创建界面
-  private ActivityMainBinding mainActivity;
+  private ActivityMainBinding2 mainActivity;
 
   @SuppressLint("SourceLockedOrientationActivity")
   @Override
@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
     AppData.init(this);
     PublicTools.setStatusAndNavBar(this);
     PublicTools.setLocale(this);
-    mainActivity = ActivityMainBinding.inflate(this.getLayoutInflater());
+    mainActivity = ActivityMainBinding2.inflate(this.getLayoutInflater());
     setContentView(mainActivity.getRoot());
 
     // 设置设备列表适配器、广播接收器    

@@ -15,7 +15,7 @@
   <GridLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:columnCount="6"
+    android:columnCount="3"
     android:padding="3dp">
     
     <Button
@@ -44,44 +44,6 @@
       android:textColor="@color/button"
       android:textSize="@dimen/smallFont" />
 
-    <Space android:layout_columnWeight="1" />
-    
-    <LinearLayout
-      android:layout_columnWeight="9"
-      android:layout_width="0dp"
-      android:layout_height="40dp"
-      android:gravity="center_vertical"
-      android:background="@drawable/background_cron_stroke"
-      android:backgroundTint="@color/alert" >
-      
-      <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" >
-        <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="10dp"
-          android:text="@string/option_is_audio"
-          android:textColor="@color/onCardBackground"
-          android:textSize="@dimen/smallFont"
-          tools:ignore="HardcodedText" />
-
-      </FrameLayout>
-
-      <Switch
-        android:id="@+id/is_audio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:thumbTint="@color/button"
-        android:thumbTintMode="multiply"
-        android:trackTint="@color/button"
-        android:trackTintMode="multiply"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
-
-    </LinearLayout>
-
     <LinearLayout
       android:layout_columnWeight="9"
       android:layout_width="0dp"
@@ -90,6 +52,7 @@
       android:gravity="center_vertical"
       android:background="@drawable/background_cron_stroke"
       android:backgroundTint="@color/button" >
+      
       <FrameLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -103,19 +66,7 @@
           android:textSize="@dimen/smallFont"
           tools:ignore="HardcodedText" />
       </FrameLayout>
-
-      <Switch
-        android:id="@+id/default_full"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:clickable="false"
-        android:thumbTint="@color/button"
-        android:thumbTintMode="multiply"
-        android:trackTint="@color/button"
-        android:trackTintMode="multiply"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
       
     </LinearLayout>
-    </GridLayout>
+  </GridLayout>
 </LinearLayout>

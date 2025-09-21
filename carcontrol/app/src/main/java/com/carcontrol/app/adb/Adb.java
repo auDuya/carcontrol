@@ -34,7 +34,7 @@ public class Adb {
   private final Thread handleOutThread = new Thread(this::handleOut);
 
   private final String uuid;
-  private static final String serverName = "/data/local/tmp/easycontrol_for_car_server_" + BuildConfig.VERSION_CODE + ".jar";
+  private static final String serverName = "/data/local/tmp/carcontrol_for_car_server_" + BuildConfig.VERSION_CODE + ".jar";
   public Thread startServerThread = new Thread(this::startServer);
   public BufferStream serverShell;
 

@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.adb;
+package com.carcontrol.app.adb;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,13 +12,13 @@ import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 import android.util.Pair;
-import top.eiyooooo.easycontrol.app.BuildConfig;
-import top.eiyooooo.easycontrol.app.R;
-import top.eiyooooo.easycontrol.app.buffer.Buffer;
-import top.eiyooooo.easycontrol.app.buffer.BufferStream;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.entity.Device;
-import top.eiyooooo.easycontrol.app.helper.PublicTools;
+import com.carcontrol.app.BuildConfig;
+import com.carcontrol.app.R;
+import com.carcontrol.app.buffer.Buffer;
+import com.carcontrol.app.buffer.BufferStream;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.entity.Device;
+import com.carcontrol.app.helper.PublicTools;
 
 public class Adb {
   public static final HashMap<String, Adb> adbMap = new HashMap<>();
@@ -94,7 +94,7 @@ public class Adb {
         pushFile(AppData.main.getResources().openRawResource(R.raw.easycontrol_server), serverName);
       }
       if (serverShell != null) serverShell.close();
-      String cmd = "CLASSPATH=" + serverName + " app_process / top.eiyooooo.easycontrol.server.Server\n";
+      String cmd = "CLASSPATH=" + serverName + " app_process / com.carcontrol.server.Server\n";
       serverShell = getShell();
       serverShell.write(ByteBuffer.wrap(cmd.getBytes()));
       waitingData(0);

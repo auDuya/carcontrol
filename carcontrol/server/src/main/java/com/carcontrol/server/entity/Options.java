@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.server.entity;
+package com.carcontrol.server.entity;
 
 import android.os.Build;
 

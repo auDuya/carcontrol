@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app;
+package com.carcontrol.app;
 
 import android.app.Activity;
 import android.content.ClipData;
@@ -10,10 +10,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.helper.PublicTools;
-import top.eiyooooo.easycontrol.app.databinding.ActivityIpBinding;
-import top.eiyooooo.easycontrol.app.databinding.ItemTextBinding;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.helper.PublicTools;
+import com.carcontrol.app.databinding.ActivityIpBinding;
+import com.carcontrol.app.databinding.ItemTextBinding;
 
 public class IpActivity extends Activity {
   private ActivityIpBinding ipActivity;

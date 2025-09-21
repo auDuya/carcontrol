@@ -41,6 +41,8 @@
       <Button
         android:id="@+id/button_auto"
         android:layout_columnWeight="9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/background_cron"
         android:backgroundTint="@color/button"
         android:gravity="center"
@@ -53,6 +55,8 @@
       <Button
         android:id="@+id/button_custom"
         android:layout_columnWeight="9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"        
         android:background="@drawable/background_cron"
         android:backgroundTint="@color/button"
         android:gravity="center"
@@ -67,6 +71,8 @@
       <Button
         android:id="@+id/button_yes"
         android:layout_columnWeight="9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"      
         android:background="@drawable/background_cron"
         android:backgroundTint="@color/button"
         android:gravity="center"
@@ -79,6 +85,8 @@
       <Button
         android:id="@+id/button_no"
         android:layout_columnWeight="9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"        
         android:background="@drawable/background_cron"
         android:backgroundTint="@color/button"
         android:gravity="center"

@@ -25,7 +25,7 @@ import com.carcontrol.app.adb.Adb;
 import com.carcontrol.app.client.Client;
 import com.carcontrol.app.entity.AppData;
 import com.carcontrol.app.entity.Device;
-import com.carcontrol.app.R;
+import com.carcontrol.app2.R;
 import com.carcontrol.app.databinding.ItemDevicesItemBinding;
 import com.carcontrol.app.databinding.ItemDevicesItemDetailBinding;
 import com.carcontrol.app.databinding.ItemSetDeviceBinding;

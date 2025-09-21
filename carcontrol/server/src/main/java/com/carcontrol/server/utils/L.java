@@ -19,7 +19,7 @@ public class L {
         sb.append("INFO: ");
         sb.append("<").append(DateFormat.format("HH:mm:ss", new java.util.Date())).append("> ");
         sb.append(message);
-        Log.i("easycontrol_for_car", message);
+        Log.i("carcontrol_for_car", message);
         flush(sb);
     }
 
@@ -28,7 +28,7 @@ public class L {
         sb.append("DEBUG: ");
         sb.append("<").append(DateFormat.format("HH:mm:ss", new java.util.Date())).append("> ");
         sb.append(message);
-        Log.d("easycontrol_for_car", message);
+        Log.d("carcontrol_for_car", message);
         flush(sb);
     }
 
@@ -40,7 +40,7 @@ public class L {
         if (throwable != null) {
             sb.append(": ").append(Log.getStackTraceString(throwable));
         }
-        Log.w("easycontrol_for_car", message, throwable);
+        Log.w("carcontrol_for_car", message, throwable);
         flush(sb);
     }
 
@@ -60,7 +60,7 @@ public class L {
         if (throwable != null) {
             sb.append(": ").append(Log.getStackTraceString(throwable));
         }
-        Log.e("easycontrol_for_car", message, throwable);
+        Log.e("carcontrol_for_car", message, throwable);
         flush(sb);
     }
 
@@ -85,7 +85,7 @@ public class L {
         if (logMode == 1) return;
         try {
             if (fileOut == null) {
-                fileOut = new PrintStream(new FileOutputStream("/data/local/tmp/easycontrol_for_car_log", false));
+                fileOut = new PrintStream(new FileOutputStream("/data/local/tmp/carcontrol_for_car_log", false));
             }
             fileOut.println(sb);
         } catch (Exception ignored) {
@@ -96,7 +96,7 @@ public class L {
         if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.O) return;
         new Thread(() -> {
             try {
-                File file = new File("/data/local/tmp/easycontrol_for_car_log");
+                File file = new File("/data/local/tmp/carcontrol_for_car_log");
                 long lastLength = 0;
                 while (true) {
                     long fileLength = file.length();

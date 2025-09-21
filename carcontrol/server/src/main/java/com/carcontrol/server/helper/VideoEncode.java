@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.server.helper;
+package com.carcontrol.server.helper;
 
 import android.graphics.Rect;
 import android.hardware.display.VirtualDisplay;
@@ -9,13 +9,13 @@ import android.os.Build;
 import android.os.IBinder;
 import android.system.ErrnoException;
 import android.view.Surface;
-import top.eiyooooo.easycontrol.server.Scrcpy;
-import top.eiyooooo.easycontrol.server.entity.Device;
-import top.eiyooooo.easycontrol.server.entity.Options;
-import top.eiyooooo.easycontrol.server.utils.L;
-import top.eiyooooo.easycontrol.server.wrappers.DisplayManager;
-import top.eiyooooo.easycontrol.server.wrappers.SurfaceControl;
-import top.eiyooooo.easycontrol.server.wrappers.WindowManager;
+import com.carcontrol.server.Scrcpy;
+import com.carcontrol.server.entity.Device;
+import com.carcontrol.server.entity.Options;
+import com.carcontrol.server.utils.L;
+import com.carcontrol.server.wrappers.DisplayManager;
+import com.carcontrol.server.wrappers.SurfaceControl;
+import com.carcontrol.server.wrappers.WindowManager;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;

@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.client.view;
+package com.carcontrol.app.client.view;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -11,11 +11,11 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Toast;
 
-import top.eiyooooo.easycontrol.app.helper.PublicTools;
-import top.eiyooooo.easycontrol.app.R;
-import top.eiyooooo.easycontrol.app.client.Client;
-import top.eiyooooo.easycontrol.app.databinding.ActivityFullBinding;
-import top.eiyooooo.easycontrol.app.entity.AppData;
+import com.carcontrol.app.helper.PublicTools;
+import com.carcontrol.app.R;
+import com.carcontrol.app.client.Client;
+import com.carcontrol.app.databinding.ActivityFullBinding;
+import com.carcontrol.app.entity.AppData;
 
 public class FullActivity extends Activity {
   private ClientView clientView;

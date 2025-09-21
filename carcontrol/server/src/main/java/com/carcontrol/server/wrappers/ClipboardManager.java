@@ -203,7 +203,7 @@ public class ClipboardManager {
             return;
         }
         if (setPrimaryClipMethod == null) getSetPrimaryClipMethod();
-        ClipData clipData = ClipData.newPlainText("easycontrol_for_car", text);
+        ClipData clipData = ClipData.newPlainText("carcontrol_for_car", text);
         try {
             if (setPrimaryClipMethod == null) throw new NoSuchMethodException("setPrimaryClip");
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {

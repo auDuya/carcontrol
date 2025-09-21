@@ -1,10 +1,10 @@
-package top.eiyooooo.easycontrol.server.wrappers;
+package com.carcontrol.server.wrappers;
 
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.ResolveInfo;
 import android.os.IInterface;
-import top.eiyooooo.easycontrol.server.utils.L;
+import com.carcontrol.server.utils.L;
 
 import java.lang.reflect.Method;
 import java.util.List;

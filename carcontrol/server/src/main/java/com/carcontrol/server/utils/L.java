@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.server.utils;
+package com.carcontrol.server.utils;
 
 import android.text.format.DateFormat;
 import android.util.Log;

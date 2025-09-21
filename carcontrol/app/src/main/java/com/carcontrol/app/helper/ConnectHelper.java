@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.carcontrol.app2.R;
+import com.carcontrol.app.R;
 import com.carcontrol.app.databinding.ItemReconnectBinding;
 import com.carcontrol.app.databinding.ModuleDialogBinding;
 import com.carcontrol.app.entity.AppData;

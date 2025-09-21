@@ -1,12 +1,12 @@
-package top.eiyooooo.easycontrol.server.wrappers;
+package com.carcontrol.server.wrappers;
 
 import android.hardware.display.VirtualDisplay;
 import android.util.Pair;
 import android.view.Display;
 import android.view.Surface;
-import top.eiyooooo.easycontrol.server.Channel;
-import top.eiyooooo.easycontrol.server.entity.DisplayInfo;
-import top.eiyooooo.easycontrol.server.utils.L;
+import com.carcontrol.server.Channel;
+import com.carcontrol.server.entity.DisplayInfo;
+import com.carcontrol.server.utils.L;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

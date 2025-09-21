@@ -1,7 +1,7 @@
 /*
  * 本页大量借鉴学习了开源ADB库：https://github.com/wuxudong/flashbot/blob/master/adblib/src/main/java/com/cgutman/adblib/UsbChannel.java，在此对该项目表示感谢
  */
-package top.eiyooooo.easycontrol.app.adb;
+package com.carcontrol.app.adb;
 
 import android.hardware.usb.UsbConstants;
 import android.hardware.usb.UsbDevice;
@@ -15,8 +15,8 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.LinkedList;
 
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.buffer.Buffer;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.buffer.Buffer;
 
 public class UsbChannel implements AdbChannel {
 

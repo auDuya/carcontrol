@@ -257,11 +257,11 @@ public class DeviceListAdapter extends BaseExpandableListAdapter {
 
     itemSetDeviceBinding.buttonYes.setOnClickListener(v -> {
       Adb.getStringResponseFromServer(device, "setNightMode", "nightMode=2").contains("success")) 
-    });
+    })
     
     itemSetDeviceBinding.buttonNo.setOnClickListener(v -> {
       Adb.getStringResponseFromServer(device, "setNightMode", "nightMode=1").contains("success")) 
-    });
+    })
     
     itemSetDeviceBinding.buttonChange.setOnClickListener(v -> {
       dialog.cancel();

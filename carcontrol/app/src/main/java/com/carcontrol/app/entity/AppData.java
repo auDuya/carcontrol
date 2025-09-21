@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.entity;
+package com.carcontrol.app.entity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -15,10 +15,10 @@ import android.view.WindowManager;
 
 import java.io.File;
 
-import top.eiyooooo.easycontrol.app.adb.AdbBase64;
-import top.eiyooooo.easycontrol.app.adb.AdbKeyPair;
-import top.eiyooooo.easycontrol.app.helper.DbHelper;
-import top.eiyooooo.easycontrol.app.helper.MyBroadcastReceiver;
+import com.carcontrol.app.adb.AdbBase64;
+import com.carcontrol.app.adb.AdbKeyPair;
+import com.carcontrol.app.helper.DbHelper;
+import com.carcontrol.app.helper.MyBroadcastReceiver;
 
 public class AppData {
   @SuppressLint("StaticFieldLeak")

@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.helper;
+package com.carcontrol.app.helper;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -28,12 +28,12 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import top.eiyooooo.easycontrol.app.R;
-import top.eiyooooo.easycontrol.app.adb.Adb;
-import top.eiyooooo.easycontrol.app.client.Client;
-import top.eiyooooo.easycontrol.app.databinding.*;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.entity.Device;
+import com.carcontrol.app.R;
+import com.carcontrol.app.adb.Adb;
+import com.carcontrol.app.client.Client;
+import com.carcontrol.app.databinding.*;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.entity.Device;
 
 public class PublicTools {
 

@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.server.entity;
+package com.carcontrol.server.entity;
 
 import android.content.IOnPrimaryClipChangedListener;
 import android.media.MediaCodecInfo;
@@ -8,13 +8,13 @@ import android.os.IBinder;
 import android.os.SystemClock;
 import android.util.Pair;
 import android.view.*;
-import top.eiyooooo.easycontrol.server.Channel;
-import top.eiyooooo.easycontrol.server.helper.ControlPacket;
-import top.eiyooooo.easycontrol.server.helper.VideoEncode;
-import top.eiyooooo.easycontrol.server.utils.L;
-import top.eiyooooo.easycontrol.server.wrappers.SurfaceControl;
-import top.eiyooooo.easycontrol.server.wrappers.WindowManager;
-import top.eiyooooo.easycontrol.server.wrappers.*;
+import com.carcontrol.server.Channel;
+import com.carcontrol.server.helper.ControlPacket;
+import com.carcontrol.server.helper.VideoEncode;
+import com.carcontrol.server.utils.L;
+import com.carcontrol.server.wrappers.SurfaceControl;
+import com.carcontrol.server.wrappers.WindowManager;
+import com.carcontrol.server.wrappers.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

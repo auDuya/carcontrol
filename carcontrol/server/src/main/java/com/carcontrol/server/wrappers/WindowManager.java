@@ -1,8 +1,8 @@
-package top.eiyooooo.easycontrol.server.wrappers;
+package com.carcontrol.server.wrappers;
 
 import android.os.IInterface;
 import android.view.IRotationWatcher;
-import top.eiyooooo.easycontrol.server.utils.L;
+import com.carcontrol.server.utils.L;
 
 import java.lang.reflect.Method;
 import java.util.Objects;

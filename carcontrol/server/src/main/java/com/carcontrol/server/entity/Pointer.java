@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.server.entity;
+package com.carcontrol.server.entity;
 
 public final class Pointer {
 

@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.server.helper;
+package com.carcontrol.server.helper;
 
 import android.media.AudioRecord;
 import android.media.MediaCodec;
@@ -6,10 +6,10 @@ import android.media.MediaCodecInfo;
 import android.media.MediaFormat;
 import android.os.Build;
 import android.system.ErrnoException;
-import top.eiyooooo.easycontrol.server.Scrcpy;
-import top.eiyooooo.easycontrol.server.entity.Device;
-import top.eiyooooo.easycontrol.server.entity.Options;
-import top.eiyooooo.easycontrol.server.utils.L;
+import com.carcontrol.server.Scrcpy;
+import com.carcontrol.server.entity.Device;
+import com.carcontrol.server.entity.Options;
+import com.carcontrol.server.utils.L;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

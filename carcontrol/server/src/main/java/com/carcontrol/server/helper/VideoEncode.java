@@ -41,7 +41,7 @@ public final class VideoEncode {
         Scrcpy.writeVideo(byteBuffer);
         // 创建显示器
         try {
-            display = SurfaceControl.createDisplay("easycontrol_for_car", Build.VERSION.SDK_INT < Build.VERSION_CODES.R || (Build.VERSION.SDK_INT == Build.VERSION_CODES.R && !"S".equals(Build.VERSION.CODENAME)));
+            display = SurfaceControl.createDisplay("carcontrol_for_car", Build.VERSION.SDK_INT < Build.VERSION_CODES.R || (Build.VERSION.SDK_INT == Build.VERSION_CODES.R && !"S".equals(Build.VERSION.CODENAME)));
         } catch (Exception e) {
             L.w("createDisplay by SurfaceControl error", e);
             Options.mirrorMode = 1;
@@ -84,7 +84,7 @@ public final class VideoEncode {
             try {
                 VirtualDisplay virtualDisplay = virtualDisplays.get(Device.displayId);
                 if (virtualDisplay != null) virtualDisplay.release();
-                virtualDisplay = DisplayManager.createVirtualDisplay("easycontrol_for_car",
+                virtualDisplay = DisplayManager.createVirtualDisplay("carcontrol_for_car",
                         Device.videoSize.first, Device.videoSize.second, Device.displayId, surface);
                 virtualDisplays.put(Device.displayId, virtualDisplay);
                 int displayId = virtualDisplay.getDisplay().getDisplayId();
@@ -98,7 +98,7 @@ public final class VideoEncode {
         } else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
                 SurfaceControl.destroyDisplay(display);
-                display = SurfaceControl.createDisplay("easycontrol_for_car", false);
+                display = SurfaceControl.createDisplay("carcontrol_for_car", false);
             }
             setDisplaySurface(display, surface);
         }

@@ -254,7 +254,7 @@ public final class Device {
     }
 
     private static void saveTimeoutToFile(int timeout) {
-        try (FileWriter writer = new FileWriter("/data/local/tmp/easycontrol_for_car_ScreenOffTimeout")) {
+        try (FileWriter writer = new FileWriter("/data/local/tmp/carcontrol_for_car_ScreenOffTimeout")) {
             writer.write(String.valueOf(timeout));
         } catch (IOException e) {
             L.e("saveTimeoutToFile error", e);
@@ -263,7 +263,7 @@ public final class Device {
 
     private static int readTimeoutFromFile() {
         int timeout = 60000;
-        try (BufferedReader reader = new BufferedReader(new FileReader("/data/local/tmp/easycontrol_for_car_ScreenOffTimeout"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("/data/local/tmp/carcontrol_for_car_ScreenOffTimeout"))) {
             String line = reader.readLine();
             if (line != null) timeout = Integer.parseInt(line);
         } catch (Exception e) {

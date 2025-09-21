@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.buffer;
+package com.carcontrol.app.buffer;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.server;
+package com.carcontrol.server;
 
 import android.hardware.display.VirtualDisplay;
 import android.os.Build;
@@ -8,12 +8,12 @@ import android.view.Surface;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import top.eiyooooo.easycontrol.server.entity.DisplayInfo;
-import top.eiyooooo.easycontrol.server.utils.L;
-import top.eiyooooo.easycontrol.server.utils.Workarounds;
-import top.eiyooooo.easycontrol.server.wrappers.DisplayManager;
-import top.eiyooooo.easycontrol.server.wrappers.ServiceManager;
-import top.eiyooooo.easycontrol.server.wrappers.UiModeManager;
+import com.carcontrol.server.entity.DisplayInfo;
+import com.carcontrol.server.utils.L;
+import com.carcontrol.server.utils.Workarounds;
+import com.carcontrol.server.wrappers.DisplayManager;
+import com.carcontrol.server.wrappers.ServiceManager;
+import com.carcontrol.server.wrappers.UiModeManager;
 
 import java.io.DataOutputStream;
 import java.nio.charset.StandardCharsets;

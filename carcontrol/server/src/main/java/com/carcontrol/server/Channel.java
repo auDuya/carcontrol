@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.server;
+package com.carcontrol.server;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
@@ -29,9 +29,9 @@ import android.view.Surface;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import top.eiyooooo.easycontrol.server.helper.FakeContext;
-import top.eiyooooo.easycontrol.server.utils.L;
-import top.eiyooooo.easycontrol.server.wrappers.IPackageManager;
+import com.carcontrol.server.helper.FakeContext;
+import com.carcontrol.server.utils.L;
+import com.carcontrol.server.wrappers.IPackageManager;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

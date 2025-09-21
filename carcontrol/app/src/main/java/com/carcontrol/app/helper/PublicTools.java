@@ -48,6 +48,12 @@ public class PublicTools {
       View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
       View.SYSTEM_UI_FLAG_HIDE_NAVIGATION |
       View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+    // 设置异形屏
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+      WindowManager.LayoutParams lp = context.getWindow().getAttributes();
+      lp.layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;
+      context.getWindow().setAttributes(lp);
+    }
   }
 
   // 设置语言
@@ -56,7 +62,6 @@ public class PublicTools {
     Configuration config = resources.getConfiguration();
     String locale = AppData.setting.getDefaultLocale();
     if (locale.equals("")) config.locale = Locale.getDefault();
-    else if (locale.equals("en")) config.locale = Locale.ENGLISH;
     else if (locale.equals("zh")) config.locale = Locale.CHINESE;
     resources.updateConfiguration(config, resources.getDisplayMetrics());
   }

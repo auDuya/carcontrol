@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.adb;
+package com.carcontrol.app.adb;
 
 import java.io.File;
 import java.io.FileInputStream;

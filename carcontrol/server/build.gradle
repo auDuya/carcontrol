@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-  namespace 'top.eiyooooo.easycontrol.server'
+  namespace 'com.carcontrol.server'
   compileSdk 34
 
   defaultConfig {
     minSdk 21
     targetSdk 34
-    applicationId 'top.eiyooooo.easycontrol.server'
+    applicationId 'com.carcontrol.server'
     versionCode 30000
     versionName '3.0.0'
   }
@@ -33,14 +33,14 @@ android {
     dependsOn 'assembleRelease'
     from file('build/outputs/apk/release/server-release-unsigned.apk')
     into file('../app/src/main/res/raw/')
-    rename('server-release-unsigned.apk', 'easycontrol_server.jar')
+    rename('server-release-unsigned.apk', 'carcontrol_server.jar')
   }
 
   task copyDebug(type: Copy) {
     dependsOn 'assembleDebug'
     from file("build/outputs/apk/debug/server-debug.apk")
     into file('../app/src/main/res/raw/')
-    rename('server-debug.apk', 'easycontrol_server.jar')
+    rename('server-debug.apk', 'carcontrol_server.jar')
   }
 
   buildFeatures {

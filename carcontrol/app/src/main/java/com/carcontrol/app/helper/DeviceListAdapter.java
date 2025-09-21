@@ -254,14 +254,29 @@ public class DeviceListAdapter extends BaseExpandableListAdapter {
     } else {
       itemSetDeviceBinding.buttonStartWireless.setVisibility(View.GONE);
     }
-
+    
     itemSetDeviceBinding.buttonYes.setOnClickListener(v -> {
-      Adb.getStringResponseFromServer(device, "setNightMode", "nightMode=2").contains("success");
+      try {
+        if (Adb.getStringResponseFromServer(device, "setNightMode", "nightMode=2").contains("success")) {
+    
+        } else throw new Exception();
+      } catch (Exception ignored) {
+  
+      }
+
     });
     
     itemSetDeviceBinding.buttonNo.setOnClickListener(v -> {
-      Adb.getStringResponseFromServer(device, "setNightMode", "nightMode=1").contains("success");
+      try {
+        if (Adb.getStringResponseFromServer(device, "setNightMode", "nightMode=1").contains("success")) {
+    
+        } else throw new Exception();
+      } catch (Exception ignored) {
+    
+      }
+    
     });
+
     
     itemSetDeviceBinding.buttonChange.setOnClickListener(v -> {
       dialog.cancel();

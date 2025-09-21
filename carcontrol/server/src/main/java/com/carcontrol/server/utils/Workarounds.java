@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.server.utils;
+package com.carcontrol.server.utils;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
@@ -7,7 +7,7 @@ import android.content.ContextWrapper;
 import android.content.pm.ApplicationInfo;
 import android.os.Build;
 import android.os.Looper;
-import top.eiyooooo.easycontrol.server.helper.FakeContext;
+import com.carcontrol.server.helper.FakeContext;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.client.view;
+package com.carcontrol.app.client.view;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -16,12 +16,12 @@ import android.view.animation.OvershootInterpolator;
 import androidx.annotation.NonNull;
 
 import org.json.JSONArray;
-import top.eiyooooo.easycontrol.app.adb.Adb;
-import top.eiyooooo.easycontrol.app.client.Client;
-import top.eiyooooo.easycontrol.app.client.ControlPacket;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.entity.Device;
-import top.eiyooooo.easycontrol.app.helper.PublicTools;
+import com.carcontrol.app.adb.Adb;
+import com.carcontrol.app.client.Client;
+import com.carcontrol.app.client.ControlPacket;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.entity.Device;
+import com.carcontrol.app.helper.PublicTools;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

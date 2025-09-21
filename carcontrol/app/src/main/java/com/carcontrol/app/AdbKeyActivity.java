@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app;
+package com.carcontrol.app;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,10 +9,10 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import top.eiyooooo.easycontrol.app.adb.AdbKeyPair;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.helper.PublicTools;
-import top.eiyooooo.easycontrol.app.databinding.ActivityAdbKeyBinding;
+import com.carcontrol.app.adb.AdbKeyPair;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.helper.PublicTools;
+import com.carcontrol.app.databinding.ActivityAdbKeyBinding;
 
 public class AdbKeyActivity extends Activity {
   private ActivityAdbKeyBinding activityAdbKeyBinding;

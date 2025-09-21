@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.helper;
+package com.carcontrol.app.helper;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -9,8 +9,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.entity.Device;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.entity.Device;
 
 public class DbHelper extends SQLiteOpenHelper {
 

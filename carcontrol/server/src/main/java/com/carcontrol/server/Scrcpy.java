@@ -1,19 +1,19 @@
-package top.eiyooooo.easycontrol.server;
+package com.carcontrol.server;
 
 import android.net.LocalServerSocket;
 import android.net.LocalSocket;
 import android.system.ErrnoException;
 import android.system.Os;
 import android.view.Display;
-import top.eiyooooo.easycontrol.server.entity.Device;
-import top.eiyooooo.easycontrol.server.entity.Options;
-import top.eiyooooo.easycontrol.server.helper.AudioEncode;
-import top.eiyooooo.easycontrol.server.helper.ControlPacket;
-import top.eiyooooo.easycontrol.server.helper.VideoEncode;
-import top.eiyooooo.easycontrol.server.utils.L;
-import top.eiyooooo.easycontrol.server.utils.Workarounds;
-import top.eiyooooo.easycontrol.server.wrappers.ServiceManager;
-import top.eiyooooo.easycontrol.server.wrappers.UiModeManager;
+import com.carcontrol.server.entity.Device;
+import com.carcontrol.server.entity.Options;
+import com.carcontrol.server.helper.AudioEncode;
+import com.carcontrol.server.helper.ControlPacket;
+import com.carcontrol.server.helper.VideoEncode;
+import com.carcontrol.server.utils.L;
+import com.carcontrol.server.utils.Workarounds;
+import com.carcontrol.server.wrappers.ServiceManager;
+import com.carcontrol.server.wrappers.UiModeManager;
 
 import java.io.DataInputStream;
 import java.io.FileDescriptor;
@@ -96,7 +96,7 @@ public final class Scrcpy {
     public static DataInputStream inputStream;
 
     private static void connectClient() throws IOException {
-        try (LocalServerSocket serverSocket = new LocalServerSocket("easycontrol_for_car_scrcpy")) {
+        try (LocalServerSocket serverSocket = new LocalServerSocket("carcontrol_for_car_scrcpy")) {
             mainSocket = serverSocket.accept();
             videoSocket = serverSocket.accept();
             mainFD = mainSocket.getFileDescriptor();
@@ -204,7 +204,7 @@ public final class Scrcpy {
     private static void release() {
         boolean lastScrcpy = false;
         try {
-            lastScrcpy = Integer.parseInt(Channel.execReadOutput("ps -ef | grep easycontrol.server.Scrcpy | grep -v grep | grep -c 'easycontrol.server.Scrcpy'").replace("<!@n@!>", "")) == 1;
+            lastScrcpy = Integer.parseInt(Channel.execReadOutput("ps -ef | grep carcontrol.server.Scrcpy | grep -v grep | grep -c 'carcontrol.server.Scrcpy'").replace("<!@n@!>", "")) == 1;
         } catch (Exception e) {
             L.w("get lastScrcpy error", e);
         }
@@ -268,7 +268,7 @@ public final class Scrcpy {
         // 6
         if (timeoutClose) {
             try {
-                Channel.execReadOutput("ps -ef | grep easycontrol.server.Scrcpy | grep -v grep | grep -E \"^[a-z]+ +[0-9]+\" -o | grep -E \"[0-9]+\" -o | xargs kill -9");
+                Channel.execReadOutput("ps -ef | grep carcontrol.server.Scrcpy | grep -v grep | grep -E \"^[a-z]+ +[0-9]+\" -o | grep -E \"[0-9]+\" -o | xargs kill -9");
             } catch (Exception e) {
                 L.e("release error", e);
             }

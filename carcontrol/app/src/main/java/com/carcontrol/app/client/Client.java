@@ -21,7 +21,7 @@ import com.carcontrol.app.entity.AppData;
 import com.carcontrol.app.entity.Device;
 import com.carcontrol.app.helper.PublicTools;
 import com.carcontrol.app.BuildConfig;
-import com.carcontrol.app2.R;
+import com.carcontrol.app.R;
 import com.carcontrol.app.adb.Adb;
 import com.carcontrol.app.buffer.BufferStream;
 import com.carcontrol.app.client.view.ClientView;

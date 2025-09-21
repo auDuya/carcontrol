@@ -1,13 +1,13 @@
-package top.eiyooooo.easycontrol.app;
+package com.carcontrol.app;
 
 import android.app.Activity;
 import android.hardware.usb.UsbDevice;
 import android.os.Bundle;
 import android.widget.Toast;
-import top.eiyooooo.easycontrol.app.client.Client;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.entity.Device;
-import top.eiyooooo.easycontrol.app.helper.DeviceListAdapter;
+import com.carcontrol.app.client.Client;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.entity.Device;
+import com.carcontrol.app.helper.DeviceListAdapter;
 
 public class StartDeviceActivity extends Activity {
     @Override

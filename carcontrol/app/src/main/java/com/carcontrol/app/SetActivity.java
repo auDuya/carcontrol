@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app;
+package com.carcontrol.app;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.helper.PublicTools;
-import top.eiyooooo.easycontrol.app.databinding.ActivitySetBinding;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.helper.PublicTools;
+import com.carcontrol.app.databinding.ActivitySetBinding;
 
 public class SetActivity extends Activity {
   private ActivitySetBinding setActivity;

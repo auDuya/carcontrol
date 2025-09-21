@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.client;
+package com.carcontrol.app.client;
 
 import static android.content.ClipDescription.MIMETYPE_TEXT_PLAIN;
 
@@ -17,14 +17,14 @@ import android.view.Surface;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.entity.Device;
-import top.eiyooooo.easycontrol.app.helper.PublicTools;
-import top.eiyooooo.easycontrol.app.BuildConfig;
-import top.eiyooooo.easycontrol.app.R;
-import top.eiyooooo.easycontrol.app.adb.Adb;
-import top.eiyooooo.easycontrol.app.buffer.BufferStream;
-import top.eiyooooo.easycontrol.app.client.view.ClientView;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.entity.Device;
+import com.carcontrol.app.helper.PublicTools;
+import com.carcontrol.app.BuildConfig;
+import com.carcontrol.app.R;
+import com.carcontrol.app.adb.Adb;
+import com.carcontrol.app.buffer.BufferStream;
+import com.carcontrol.app.client.view.ClientView;
 
 public class Client {
   // 状态，0为初始，1为连接，-1为关闭
@@ -145,7 +145,7 @@ public class Client {
             + (AppData.setting.getTurnOffScreenIfStop() ? 1 : 0) * 10
             + (AppData.setting.getTurnOnScreenIfStop() ? 1 : 0);
     StringBuilder cmd = new StringBuilder();
-    cmd.append("app_process -Djava.class.path=").append(serverName).append(" / top.eiyooooo.easycontrol.server.Scrcpy");
+    cmd.append("app_process -Djava.class.path=").append(serverName).append(" / com.carcontrol.server.Scrcpy");
     if (!device.isAudio) cmd.append(" isAudio=0");
     if (device.maxSize != 1600) cmd.append(" maxSize=").append(device.maxSize);
     if (device.maxFps != 60) cmd.append(" maxFps=").append(device.maxFps);

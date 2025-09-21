@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.carcontrol.app2.R;
+import com.carcontrol.app.R;
 import com.carcontrol.app.adb.Adb;
 import com.carcontrol.app.client.Client;
 import com.carcontrol.app.databinding.*;

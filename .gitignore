@@ -1,13 +1,13 @@
-easycontrol/*.iml
-easycontrol/.gradle
-easycontrol/.idea
-easycontrol/local.properties
+carcontrol/*.iml
+carcontrol/.gradle
+carcontrol/.idea
+carcontrol/local.properties
 .idea
-easycontrol/app/build
-easycontrol/app/.gradle
-easycontrol/app/debug
-easycontrol/app/release
-easycontrol/app/src/main/res/raw/easycontrol_server.jar
+carcontrol/app/build
+carcontrol/app/.gradle
+carcontrol/app/debug
+carcontrol/app/release
+carcontrol/app/src/main/res/raw/carcontrol_server.jar
 
-easycontrol/server/build
-easycontrol/server/.gradle
+carcontrol/server/build
+carcontrol/server/.gradle

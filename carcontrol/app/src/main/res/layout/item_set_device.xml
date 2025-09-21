@@ -82,7 +82,7 @@
 
       <Button
         android:id="@+id/button_yes"
-        android:layout_height="wrap_content"
+        android:layout_columnWeight="9"
         android:background="@drawable/background_cron"
         android:backgroundTint="@color/button"
         android:gravity="center"

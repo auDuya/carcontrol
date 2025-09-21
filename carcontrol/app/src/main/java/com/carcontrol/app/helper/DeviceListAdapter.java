@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.helper;
+package com.carcontrol.app.helper;
 
 import static android.content.ClipDescription.MIMETYPE_TEXT_PLAIN;
 
@@ -20,15 +20,15 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-import top.eiyooooo.easycontrol.app.StartDeviceActivity;
-import top.eiyooooo.easycontrol.app.adb.Adb;
-import top.eiyooooo.easycontrol.app.client.Client;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.entity.Device;
-import top.eiyooooo.easycontrol.app.R;
-import top.eiyooooo.easycontrol.app.databinding.ItemDevicesItemBinding;
-import top.eiyooooo.easycontrol.app.databinding.ItemDevicesItemDetailBinding;
-import top.eiyooooo.easycontrol.app.databinding.ItemSetDeviceBinding;
+import com.carcontrol.app.StartDeviceActivity;
+import com.carcontrol.app.adb.Adb;
+import com.carcontrol.app.client.Client;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.entity.Device;
+import com.carcontrol.app.R;
+import com.carcontrol.app.databinding.ItemDevicesItemBinding;
+import com.carcontrol.app.databinding.ItemDevicesItemDetailBinding;
+import com.carcontrol.app.databinding.ItemSetDeviceBinding;
 
 public class DeviceListAdapter extends BaseExpandableListAdapter {
 

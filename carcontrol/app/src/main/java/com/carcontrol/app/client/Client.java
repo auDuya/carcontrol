@@ -56,7 +56,7 @@ public class Client {
   private long lastKeepAliveTime;
   public int multiLink = 0; // 0为单连接，1为多连接主，2为多连接从
 
-  private static final String serverName = "/data/local/tmp/carcontrol_for_car_server_" + BuildConfig.VERSION_CODE + ".jar";
+  private static final String serverName = "/data/local/tmp/carcontrol_server_" + BuildConfig.VERSION_CODE + ".jar";
   private static final boolean supportH265 = PublicTools.isDecoderSupport("hevc");
   private static final boolean supportOpus = PublicTools.isDecoderSupport("opus");
 
@@ -255,8 +255,8 @@ public class Client {
     Thread.sleep(50);
     for (int i = 0; i < 60; i++) {
       try {
-        bufferStream = adb.localSocketForward("carcontrol_for_car_scrcpy");
-        videoStream = adb.localSocketForward("carcontrol_for_car_scrcpy");
+        bufferStream = adb.localSocketForward("carcontrol_scrcpy");
+        videoStream = adb.localSocketForward("carcontrol_scrcpy");
         return;
       } catch (Exception ignored) {
         Thread.sleep(50);

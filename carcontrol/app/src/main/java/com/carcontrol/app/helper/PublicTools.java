@@ -575,7 +575,7 @@ public class PublicTools {
 
   // 日志
   public static void logToast(String str) {
-    Log.e("Easycontrol", str);
+    Log.e("carcontrol", str);
     AppData.uiHandler.post(() -> Toast.makeText(AppData.main, str, Toast.LENGTH_SHORT).show());
   }
 

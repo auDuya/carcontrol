@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app;
+package com.carcontrol.app;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -10,10 +10,10 @@ import android.widget.RelativeLayout;
 
 import java.io.InputStream;
 
-import top.eiyooooo.easycontrol.app.adb.AdbPairManager;
-import top.eiyooooo.easycontrol.app.databinding.ActivityPairBinding;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.helper.PublicTools;
+import com.carcontrol.app.adb.AdbPairManager;
+import com.carcontrol.app.databinding.ActivityPairBinding;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.helper.PublicTools;
 
 public class PairActivity extends Activity {
     private ActivityPairBinding pairActivity;

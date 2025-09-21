@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.helper;
+package com.carcontrol.app.helper;
 
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
@@ -11,19 +11,19 @@ import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbInterface;
 import android.hardware.usb.UsbManager;
 import android.os.Build;
-import top.eiyooooo.easycontrol.app.adb.Adb;
-import top.eiyooooo.easycontrol.app.entity.AppData;
-import top.eiyooooo.easycontrol.app.entity.Device;
-import top.eiyooooo.easycontrol.app.R;
-import top.eiyooooo.easycontrol.app.client.Client;
+import com.carcontrol.app.adb.Adb;
+import com.carcontrol.app.entity.AppData;
+import com.carcontrol.app.entity.Device;
+import com.carcontrol.app.R;
+import com.carcontrol.app.client.Client;
 
 import java.util.Map;
 import java.util.Objects;
 
 public class MyBroadcastReceiver extends BroadcastReceiver {
   
-  private static final String ACTION_USB_PERMISSION = "top.eiyooooo.easycontrol.app.USB_PERMISSION";
-  private static final String ACTION_CONTROL = "top.eiyooooo.easycontrol.app.CONTROL";
+  private static final String ACTION_USB_PERMISSION = "com.carcontrol.app.USB_PERMISSION";
+  private static final String ACTION_CONTROL = "com.carcontrol.app.CONTROL";
   private static final String ACTION_SCREEN_OFF = "android.intent.action.SCREEN_OFF";
   public static final String ACTION_CONFIGURATION_CHANGED = "android.intent.action.CONFIGURATION_CHANGED";
 

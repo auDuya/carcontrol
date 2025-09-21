@@ -1,1 +1,13 @@
+carcontrol/*.iml
+carcontrol/.gradle
+carcontrol/.idea
+carcontrol/local.properties
+.idea
+carcontrol/app/build
+carcontrol/app/.gradle
+carcontrol/app/debug
+carcontrol/app/release
+carcontrol/app/src/main/res/raw/carcontrol_server.jar
 
+carcontrol/server/build
+carcontrol/server/.gradle

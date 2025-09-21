@@ -1,4 +1,4 @@
-package top.eiyooooo.easycontrol.app.helper;
+package com.carcontrol.app.helper;
 
 import android.app.Activity;
 import android.app.Application;
@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.lsposed.hiddenapibypass.HiddenApiBypass;
-import top.eiyooooo.easycontrol.app.client.Client;
-import top.eiyooooo.easycontrol.app.entity.AppData;
+import com.carcontrol.app.client.Client;
+import com.carcontrol.app.entity.AppData;
 
 public class MyApplication extends Application implements Application.ActivityLifecycleCallbacks {
     private Thread releaseThread;

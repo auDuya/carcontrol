@@ -96,7 +96,7 @@ public final class Scrcpy {
     public static DataInputStream inputStream;
 
     private static void connectClient() throws IOException {
-        try (LocalServerSocket serverSocket = new LocalServerSocket("carcontrol_for_car_scrcpy")) {
+        try (LocalServerSocket serverSocket = new LocalServerSocket("carcontrol_scrcpy")) {
             mainSocket = serverSocket.accept();
             videoSocket = serverSocket.accept();
             mainFD = mainSocket.getFileDescriptor();

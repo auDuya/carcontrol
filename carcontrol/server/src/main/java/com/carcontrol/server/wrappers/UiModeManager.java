@@ -1,11 +1,11 @@
-package top.eiyooooo.easycontrol.server.wrappers;
+package com.carcontrol.server.wrappers;
 
 import android.os.IInterface;
 
 import java.lang.reflect.Method;
 import java.util.Objects;
 
-import top.eiyooooo.easycontrol.server.utils.L;
+import com.carcontrol.server.utils.L;
 
 public class UiModeManager {
     private static IInterface manager;

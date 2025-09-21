@@ -36,7 +36,7 @@ public class AdbPairManager extends AbsAdbConnectionManager {
 
     private AdbPairManager() throws Exception {
         setApi(Build.VERSION_CODES.R);
-        keyName = "Easycontrol_For_Car-unknown";
+        keyName = "carcontrol_For_Car-unknown";
         mPrivateKey = readPrivateKeyFromFile();
         mCertificate = readCertificateFromFile();
         if (mPrivateKey != null && mCertificate != null) {
@@ -160,7 +160,7 @@ public class AdbPairManager extends AbsAdbConnectionManager {
         EncodedKeySpec privateKeySpec = new PKCS8EncodedKeySpec(privateKey.getEncoded());
         int hashCode = keyFactory.generatePrivate(privateKeySpec).hashCode();
         String hash = hashCode >= 0 ? String.valueOf(hashCode) : String.valueOf(-hashCode);
-        if (hash.length() <= 4) return "Easycontrol_For_Car-" + hash;
-        else return "Easycontrol_For_Car-" + hash.substring(hash.length() - 4);
+        if (hash.length() <= 4) return "carcontrol_For_Car-" + hash;
+        else return "carcontrol_For_Car-" + hash.substring(hash.length() - 4);
     }
 }

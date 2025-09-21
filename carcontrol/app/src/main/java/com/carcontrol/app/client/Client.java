@@ -246,7 +246,7 @@ public class Client {
     } catch (Exception ignored) {
       specifiedTransferred = true;
       changeMode(0);
-      PublicTools.logToast(AppData.main.getString(R.string.error_transfer_app_failed));
+      PublicTools.logToast(AppData.main.getString(R.string.tip_application_transfer));
     }
   }
 

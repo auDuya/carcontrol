@@ -488,10 +488,8 @@ public class Client {
     playAudio(multiLink == 0 || multiLink == 1);
     if (multiLink == 2) {
       clientView.device.clipboardSync = false;
-      clientView.device.nightModeSync = false;
     } else if (multiLink == 0 || multiLink == 1) {
       if (clientView.deviceOriginal.clipboardSync) clientView.device.clipboardSync = true;
-      if (clientView.deviceOriginal.nightModeSync) clientView.device.nightModeSync = true;
     }
     this.multiLink = multiLink;
     clientView.multiLink = multiLink;

@@ -36,7 +36,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:focusable="false"        
-        android:src="@drawable/square"
+        android:src="@drawable/menu"
         android:tint="#DEDEDE" />
 
       <ImageView
@@ -106,7 +106,7 @@
     android:layout_height="50dp"
     android:layout_gravity="start|top"
     android:focusable="false"    
-    android:src="@drawable/not_equal"
+    android:src="@drawable/menu"
     android:tint="#DEDEDE" />
 
 </FrameLayout>

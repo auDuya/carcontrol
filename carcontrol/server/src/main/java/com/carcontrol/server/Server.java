@@ -13,7 +13,6 @@ import com.carcontrol.server.utils.L;
 import com.carcontrol.server.utils.Workarounds;
 import com.carcontrol.server.wrappers.DisplayManager;
 import com.carcontrol.server.wrappers.ServiceManager;
-import com.carcontrol.server.wrappers.UiModeManager;
 
 import java.io.DataOutputStream;
 import java.nio.charset.StandardCharsets;
@@ -297,19 +296,6 @@ public class Server {
                     if (cmd == null) throw new Exception("parameter 'cmd' not found");
                     L.d("runShell cmd: " + cmd);
                     postResponse(Channel.execReadOutput(cmd));
-                    break;
-                }
-                case "/getNightMode": {
-                    int nightMode = UiModeManager.getNightMode();
-                    L.d("nightMode: " + nightMode);
-                    postResponse(String.valueOf(nightMode));
-                    break;
-                }
-                case "/setNightMode": {
-                    String nightMode = request.get("nightMode");
-                    if (nightMode == null) throw new Exception("parameter 'nightMode' not found");
-                    UiModeManager.setNightMode(Integer.parseInt(nightMode));
-                    postResponse("success");
                     break;
                 }
                 default:

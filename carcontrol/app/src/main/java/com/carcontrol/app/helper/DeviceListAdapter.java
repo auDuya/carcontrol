@@ -150,16 +150,6 @@ public class DeviceListAdapter extends BaseExpandableListAdapter {
   // 创建子View
   private void setChildView(View view, Device device) {
     ItemDevicesItemDetailBinding devicesItemDetailBinding = (ItemDevicesItemDetailBinding) view.getTag();
-    // 设置卡片值
-    devicesItemDetailBinding.isAudio.setChecked(device.isAudio);
-    devicesItemDetailBinding.defaultFull.setChecked(true);
-    // 单击事件
-    devicesItemDetailBinding.isAudio.setOnCheckedChangeListener((buttonView, isChecked) -> {
-      device.isAudio = isChecked;
-      AppData.dbHelper.update(device);
-    });
-    View isAudioParent = (View) devicesItemDetailBinding.isAudio.getParent();
-    isAudioParent.setOnClickListener(v -> devicesItemDetailBinding.isAudio.toggle());
     devicesItemDetailBinding.displayMirroring.setOnClickListener(v -> startDevice(device, 0));
     devicesItemDetailBinding.createDisplay.setOnClickListener(v -> startDevice(device, 1));
   }

@@ -27,9 +27,7 @@
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      android:padding="15dp"
-      android:orientation="vertical">
-      
+      android:orientation="vertical">      
     </LinearLayout>
 
     <ImageView
@@ -37,6 +35,7 @@
       android:layout_width="50dp"
       android:layout_height="50dp"
       android:padding="7dp"
+      android:paddingEnd="15dp"
       android:src="@drawable/refresh"
       android:tint="@color/onBackground" />
 
@@ -45,6 +44,7 @@
       android:layout_width="50dp"
       android:layout_height="50dp"
       android:padding="7dp"
+      android:paddingEnd="15dp"
       android:src="@drawable/pair"
       android:tint="@color/onBackground" />
 
@@ -53,6 +53,7 @@
       android:layout_width="50dp"
       android:layout_height="50dp"
       android:padding="8dp"
+      android:paddingEnd="15dp"
       android:src="@drawable/plus"
       android:tint="@color/onBackground" />
 

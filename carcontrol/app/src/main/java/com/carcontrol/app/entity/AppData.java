@@ -14,6 +14,7 @@ import android.view.WindowManager;
 
 import java.io.File;
 
+import top.eiyooooo.easycontrol.app.R;
 import com.carcontrol.app.adb.AdbBase64;
 import com.carcontrol.app.adb.AdbKeyPair;
 import com.carcontrol.app.helper.DbHelper;

@@ -19,7 +19,7 @@
       android:id="@+id/button_set"
       android:layout_width="50dp"
       android:layout_height="50dp"
-      android:padding="13dp"
+      android:padding="10dp"
       android:src="@drawable/equals"
       android:tint="@color/onBackground" />
 

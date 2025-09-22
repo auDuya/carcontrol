@@ -88,15 +88,6 @@ public final class Setting {
     editor.apply();
   }
 
-  public boolean getDefaultNightModeSync() {
-    return sharedPreferences.getBoolean("defaultNightModeSync", false);
-  }
-
-  public void setDefaultNightModeSync(boolean value) {
-    editor.putBoolean("defaultNightModeSync", value);
-    editor.apply();
-  }
-
   public boolean getTurnOnScreenIfStart() {
     return sharedPreferences.getBoolean("TurnOnScreenIfStart", true);
   }

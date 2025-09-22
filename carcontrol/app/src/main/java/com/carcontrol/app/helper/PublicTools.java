@@ -268,6 +268,20 @@ public class PublicTools {
     return textView;
   }
 
+  // 创建纯文本带说明卡片
+  public static ItemTextDetailBinding createTextCardDetail(
+          Context context,
+          String text,
+          String textDetail,
+          MyFunction function
+  ) {
+    ItemTextDetailBinding textDetailView = ItemTextDetailBinding.inflate(LayoutInflater.from(context));
+    textDetailView.itemText.setText(text);
+    textDetailView.itemDetail.setText(textDetail);
+    if (function != null) textDetailView.getRoot().setOnClickListener(v -> function.run());
+    return textDetailView;
+  }
+
   // 创建开关卡片
   public static ItemSwitchBinding createSwitchCard(
     Context context,

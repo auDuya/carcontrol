@@ -5,22 +5,6 @@
   <!-- 主页 -->
   <string name="car_version_message">易控车机</string>
 
-  <!-- 配对页面 -->
-  <string name="pair_ip">IP地址</string>
-  <string name="pair_ip_hint">同一网络下待连接设备的IP地址</string>
-  <string name="pair_pair">配对</string>
-  <string name="pair_pairing_port_hint">配对端口</string>
-  <string name="pair_pairing_code_hint">配对码</string>
-  <string name="pair_open_port">打开5555端口</string>
-  <string name="pair_debug_port_hint">调试端口</string>
-  <string name="pair_run">运行</string>
-  <string name="pair_cert">配对证书</string>
-  <string name="pair_generating_cert">配对证书生成中</string>
-  <string name="pair_no_cert">无配对证书，请尝试重置</string>
-  <string name="pair_cert_regenerate">重置</string>
-  <string name="pair_success">成功</string>
-  <string name="pair_failed">失败</string>
-
   <!-- 设置页面 -->
   <string name="set_default">默认参数</string>
   <string name="set_display">显示</string>
@@ -118,7 +102,7 @@
   <string name="error_app_not_found">指定包名的应用不存在</string>
   <string name="error_device_not_found">未找到该设备</string>
   <string name="error_default_device_not_found">未找到默认设备</string>
-  <string name="error_notify">某个设备出现错误</string>
+  <string name="error_notify">设备错误</string>
 
   <!-- 提示 -->
   <string name="loading_text">屏幕镜像</string>
@@ -138,8 +122,6 @@
   <string name="option_is_audio_detail">开启后将尝试传输音频</string>
   <string name="option_clipboard_sync">剪贴板同步</string>
   <string name="option_clipboard_sync_detail">同步主控端和被控端的剪贴板</string>
-  <string name="option_night_mode_sync">黑暗模式</string>
-  <string name="option_night_mode_sync_detail">同步主控端和被控端的黑暗模式</string>
   <string name="option_max_size">最大大小</string>
   <string name="option_max_size_detail">设置画面长和宽的最大大小</string>
   <string name="option_max_size_original">原始分辨率</string>
@@ -151,8 +133,6 @@
   <string name="option_use_h265_detail">优先使用H265，实际以支持情况为主，若视频异常可尝试关闭</string>
   <string name="option_use_opus">优先Opus</string>
   <string name="option_use_opus_detail">优先使用Opus，实际以支持情况为主</string>
-  <string name="option_default_full">全屏启动</string>
-  <string name="option_default_full_detail">开启后在连接成功后直接进入全屏状态</string>
   <string name="option_set_resolution">应用流转自动缩放</string>
   <string name="option_set_resolution_detail">开启后应用流转可自动缩放</string>
 

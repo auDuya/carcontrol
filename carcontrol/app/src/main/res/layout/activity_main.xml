@@ -20,7 +20,7 @@
       android:layout_width="50dp"
       android:layout_height="50dp"
       android:padding="13dp"
-      android:src="@drawable/bars"
+      android:src="@drawable/equals"
       android:tint="@color/onBackground" />
 
     <LinearLayout

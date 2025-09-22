@@ -245,6 +245,7 @@ public class PublicTools {
 
   // 创建Client加载框
   public static Pair<View, WindowManager.LayoutParams> createLoading(Context context) {
+    ItemLoadingBinding loadingView = ItemLoadingBinding.inflate(LayoutInflater.from(context));
     WindowManager.LayoutParams loadingViewParams = new WindowManager.LayoutParams(
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.WRAP_CONTENT,

@@ -12,6 +12,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="horizontal"
+    android:paddingEnd="15dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp">
 
@@ -53,7 +54,7 @@
       android:layout_width="50dp"
       android:layout_height="50dp"
       android:padding="8dp"
-      android:paddingEnd="25dp"
+      android:paddingEnd="15dp"
       android:src="@drawable/plus"
       android:tint="@color/onBackground" />
 

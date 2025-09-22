@@ -15,7 +15,7 @@ import com.carcontrol.app.entity.Device;
 public class DbHelper extends SQLiteOpenHelper {
 
   private static final String dataBaseName = "app.db";
-  private static final int version = 18;
+  private static final int version = 17;
   private final String tableName = "DevicesDb";
 
   public DbHelper(Context context) {
@@ -24,7 +24,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
   @Override
   public void onCreate(SQLiteDatabase db) {
-    db.execSQL("CREATE TABLE " + tableName + " (\n" + "\t uuid text PRIMARY KEY,\n" + "\t type integer,\n" + "\t name text,\n" + "\t address text,\n" + "\t specified_app text,\n" + "\t isAudio integer,\n" + "\t maxSize integer,\n" + "\t maxFps integer,\n" + "\t maxVideoBit integer,\n" + "\t setResolution integer,\n" + "\t defaultFull integer,\n" + "\t useH265 integer,\n" + "\t useOpus integer,\n" + "\t connectOnStart integer,\n" + "\t clipboardSync integer,\n" + "\t nightModeSync integer\n" + ");");
+    db.execSQL("CREATE TABLE " + tableName + " (\n" + "\t uuid text PRIMARY KEY,\n" + "\t type integer,\n" + "\t name text,\n" + "\t address text,\n" + "\t specified_app text,\n" + "\t isAudio integer,\n" + "\t maxSize integer,\n" + "\t maxFps integer,\n" + "\t maxVideoBit integer,\n" + "\t setResolution integer,\n" + "\t defaultFull integer,\n" + "\t useH265 integer,\n" + "\t useOpus integer,\n" + "\t connectOnStart integer,\n" + "\t clipboardSync integer,\n" + ");");
   }
 
   @SuppressLint("Range")
@@ -100,7 +100,6 @@ public class DbHelper extends SQLiteOpenHelper {
     values.put("useOpus", device.useOpus);
     values.put("connectOnStart", device.connectOnStart);
     values.put("clipboardSync", device.clipboardSync);
-    values.put("nightModeSync", device.nightModeSync);
     return values;
   }
 
@@ -121,8 +120,7 @@ public class DbHelper extends SQLiteOpenHelper {
       cursor.getColumnIndex("useH265") == -1 ? AppData.setting.getDefaultUseH265() : cursor.getInt(cursor.getColumnIndex("useH265")) == 1,
       cursor.getColumnIndex("useOpus") == -1 ? AppData.setting.getDefaultUseOpus() : cursor.getInt(cursor.getColumnIndex("useOpus")) == 1,
       cursor.getColumnIndex("connectOnStart") != -1 && cursor.getInt(cursor.getColumnIndex("connectOnStart")) == 1,
-      cursor.getColumnIndex("clipboardSync") == -1 ? AppData.setting.getDefaultClipboardSync() : cursor.getInt(cursor.getColumnIndex("clipboardSync")) == 1,
-      cursor.getColumnIndex("nightModeSync") == -1 ? AppData.setting.getDefaultNightModeSync() : cursor.getInt(cursor.getColumnIndex("nightModeSync")) == 1
+      cursor.getColumnIndex("clipboardSync") == -1 ? AppData.setting.getDefaultClipboardSync() : cursor.getInt(cursor.getColumnIndex("clipboardSync")) == 1
     );
   }
 }

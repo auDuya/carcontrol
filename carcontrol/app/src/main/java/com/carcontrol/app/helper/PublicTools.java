@@ -245,7 +245,6 @@ public class PublicTools {
 
   // 创建Client加载框
   public static Pair<View, WindowManager.LayoutParams> createLoading(Context context) {
-    ItemLoadingBinding loadingView = ItemLoadingBinding.inflate(LayoutInflater.from(context));
     WindowManager.LayoutParams loadingViewParams = new WindowManager.LayoutParams(
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.WRAP_CONTENT,
@@ -267,20 +266,6 @@ public class PublicTools {
     textView.getRoot().setText(text);
     if (function != null) textView.getRoot().setOnClickListener(v -> function.run());
     return textView;
-  }
-
-  // 创建纯文本带说明卡片
-  public static ItemTextDetailBinding createTextCardDetail(
-          Context context,
-          String text,
-          String textDetail,
-          MyFunction function
-  ) {
-    ItemTextDetailBinding textDetailView = ItemTextDetailBinding.inflate(LayoutInflater.from(context));
-    textDetailView.itemText.setText(text);
-    textDetailView.itemDetail.setText(textDetail);
-    if (function != null) textDetailView.getRoot().setOnClickListener(v -> function.run());
-    return textDetailView;
   }
 
   // 创建开关卡片

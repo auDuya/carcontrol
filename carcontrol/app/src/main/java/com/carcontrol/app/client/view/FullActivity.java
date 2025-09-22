@@ -135,7 +135,6 @@ public class FullActivity extends Activity {
   // 导航栏隐藏
   private void setNavBarHide(boolean isShow) {
     fullActivity.navBar.setVisibility(isShow ? View.VISIBLE : View.GONE);
-    fullActivity.buttonNavBar.setImageResource(isShow ? R.drawable.not_equal : R.drawable.equals);
   }
 
   private int orientation;

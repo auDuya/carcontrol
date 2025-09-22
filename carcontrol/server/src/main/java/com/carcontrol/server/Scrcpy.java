@@ -13,7 +13,6 @@ import com.carcontrol.server.helper.VideoEncode;
 import com.carcontrol.server.utils.L;
 import com.carcontrol.server.utils.Workarounds;
 import com.carcontrol.server.wrappers.ServiceManager;
-import com.carcontrol.server.wrappers.UiModeManager;
 
 import java.io.DataInputStream;
 import java.io.FileDescriptor;
@@ -172,10 +171,6 @@ public final class Scrcpy {
                     case 8:
                         Device.changePower();
                         break;
-                    case 9:
-                        if (Device.oldNightMode == -1) Device.oldNightMode = UiModeManager.getNightMode();
-                        UiModeManager.setNightMode(inputStream.readByte());
-                        break;
                 }
             }
         } catch (Exception e) {
@@ -241,9 +236,6 @@ public final class Scrcpy {
             } catch (Exception e) {
                 L.e("release error", e);
             }
-        }
-        if (lastScrcpy && Device.oldNightMode != -1 && UiModeManager.getNightMode() != Device.oldNightMode) {
-            UiModeManager.setNightMode(Device.oldNightMode);
         }
 
         // 4

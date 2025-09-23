@@ -1,42 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- This is a modified version of AXMLPrinter2(By Google) library. Check out how many changes are made at https://github.com/developer-krushna/AXMLPrinter by (@developer-krushna) -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="24dp"
-    android:width="24dp"
-    android:viewportWidth="24.0"
-    android:viewportHeight="24.0">
+    android:height="512dp"
+    android:width="640dp"
+    android:viewportWidth="640.0"
+    android:viewportHeight="512.0">
     <path
-        android:fillColor="#00000000"
-        android:pathData="M15.5,5.5H19V9M6,9V5.5H9.5M6,15V18.5H9.5M15.5,18.5H19V15"
-        android:strokeColor="#ff000000"
-        android:strokeWidth="1.5"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:fillColor="#ff000000"
+        android:pathData="M0,0h640v512h-640z"
+        android:fillAlpha="0.0" />
     <path
-        android:fillColor="#00000000"
-        android:pathData="M9.5,9L6,5.5"
-        android:strokeColor="#ff000000"
-        android:strokeWidth="1.5"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:fillColor="#ff000000"
+        android:pathData="M544.91,114.5C542.82,68.03 504.48,31 457.5,31L182.5,31L178.5,31.09C132.03,33.18 95,71.52 95,118.5L95,237.19L95.13,239.69C97.54,262.16 132.5,261.33 132.5,237.19L132.5,118.5L132.6,115.34C134.23,89.2 155.95,68.5 182.5,68.5L457.5,68.5L460.66,68.6C486.8,70.23 507.5,91.95 507.5,118.5L507.5,393.5L507.39,396.66C505.76,422.8 484.04,443.5 457.49,443.5L361.48,443.5L359.29,443.63C349.97,444.71 342.73,452.64 342.73,462.25C342.73,472.6 351.13,481 361.48,481L457.5,481L461.5,480.91C507.97,478.82 545,440.48 545,393.5L545,118.5L544.91,114.5Z" />
     <path
-        android:fillColor="#00000000"
-        android:pathData="M15.5,9L19,5.5"
-        android:strokeColor="#ff000000"
-        android:strokeWidth="1.5"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:fillColor="#00000000"
-        android:pathData="M9.5,15L6,18.5"
-        android:strokeColor="#ff000000"
-        android:strokeWidth="1.5"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:fillColor="#00000000"
-        android:pathData="M15.5,15L19,18.5"
-        android:strokeColor="#ff000000"
-        android:strokeWidth="1.5"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+        android:fillColor="#ff000000"
+        android:pathData="M245,274.75L170.01,274.75C128.58,274.75 95.01,308.33 95.01,349.75L95.01,406C95.01,447.42 128.58,481 170.01,481L245,481C286.42,481 320,447.42 320,406L320,349.75C320,308.33 286.42,274.75 245,274.75ZM282.5,406L282.4,408.8C280.97,428.2 264.78,443.5 245,443.5L170.01,443.5L167.21,443.4C147.8,441.97 132.51,425.77 132.51,406L132.51,349.75L132.61,346.95C134.04,327.55 150.23,312.25 170.01,312.25L245,312.25L247.8,312.35C267.21,313.78 282.5,329.98 282.5,349.75L282.5,406Z" />
 </vector>

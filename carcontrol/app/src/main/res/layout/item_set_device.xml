@@ -31,7 +31,7 @@
     <Button
       android:id="@+id/button_change"
       android:layout_columnWeight="9"
-      android:background="@drawable/background_cron"
+      android:background="@drawable/button_selector"
       android:backgroundTint="@color/alert"
       android:gravity="center"
       android:text="@string/set_device_button_change"
@@ -43,7 +43,7 @@
     <Button
       android:id="@+id/button_delete"
       android:layout_columnWeight="9"
-      android:background="@drawable/background_cron"
+      android:background="@drawable/button_selector"
       android:backgroundTint="@color/alert"
       android:gravity="center"
       android:text="@string/set_device_button_delete"
@@ -57,7 +57,7 @@
       <Button
         android:id="@+id/button_yes"
         android:layout_columnWeight="9"
-        android:background="@drawable/background_cron"
+        android:background="@drawable/button_selector"
         android:backgroundTint="@color/button"
         android:gravity="center"
         android:text="@string/night_mode_yes"
@@ -69,7 +69,7 @@
       <Button
         android:id="@+id/button_no"
         android:layout_columnWeight="9"
-        android:background="@drawable/background_cron"
+        android:background="@drawable/button_selector"
         android:backgroundTint="@color/button"
         android:gravity="center"
         android:text="@string/night_mode_no"

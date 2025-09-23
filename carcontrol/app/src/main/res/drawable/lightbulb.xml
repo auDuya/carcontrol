@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:name="btn_radio_to_on_mtrl"
-    android:height="32dp"
-    android:width="32dp"
-    android:viewportWidth="32.0"
-    android:viewportHeight="32.0">
-    <group
-        android:name="btn_radio_to_on_mtrl_0"
-        android:translateX="16.0"
-        android:translateY="16.0">
-        <group android:name="ring_outer">
-            <path
-                android:name="ring_outer_path"
-                android:pathData="M 0.0,-9.0 c 4.9705627482,0.0 9.0,4.0294372518 9.0,9.0 c 0.0,4.9705627482 -4.0294372518,9.0 -9.0,9.0 c -4.9705627482,0.0 -9.0,-4.0294372518 -9.0,-9.0 c 0.0,-4.9705627482 4.0294372518,-9.0 9.0,-9.0 Z"
-                android:strokeColor="#ff000000"
-                android:strokeWidth="2.0" />
-        </group>
-        <group
-            android:name="dot_group"
-            android:scaleX="0.0"
-            android:scaleY="0.0">
-            <path
-                android:name="dot_path"
-                android:fillColor="#ff000000"
-                android:pathData="M 0.0,-5.0 c -2.7619934082,0.0 -5.0,2.2380065918 -5.0,5.0 c 0.0,2.7619934082 2.2380065918,5.0 5.0,5.0 c 2.7619934082,0.0 5.0,-2.2380065918 5.0,-5.0 c 0.0,-2.7619934082 -2.2380065918,-5.0 -5.0,-5.0 Z" />
-        </group>
-    </group>
+    android:height="24dp"
+    android:width="25dp"
+    android:viewportWidth="1024.0"
+    android:viewportHeight="1024.0">
+    <path
+        android:fillColor="#ff000000"
+        android:pathData="M512.1,801.5c-158.1,0 -289.9,-131.6 -289.9,-289.8 0,-158.1 131.7,-289.9 289.9,-289.9 158.1,0 289.8,131.7 289.8,289.9 0,158.1 -131.7,289.9 -289.8,289.9zM512.1,748.8a236.2,236.2 0,0 0,237.1 -237.1A236.2,236.2 0,0 0,512.1 274.6a236.2,236.2 0,0 0,-237.1 237.2A236.1,236.1 0,0 0,512.1 748.8zM485.8,63.7h52.7v105.4h-52.7L485.8,63.7zM485.8,854.2h52.7v105.4h-52.7v-105.4zM960,485.3v52.7h-105.4v-52.7L960,485.3zM169.6,485.3v52.7L64.2,538v-52.7L169.6,485.3zM812.5,174.4l36.9,36.9 -73.8,73.8 -36.9,-36.9 73.8,-73.8zM253.9,733l36.9,36.9L217,843.5l-36.9,-36.9 73.8,-73.7zM849.4,812l-36.9,36.9 -73.8,-73.8 36.9,-36.9 73.8,73.8zM290.8,253.4l-36.9,36.9 -79,-79 36.9,-36.9 79,79z" />
 </vector>

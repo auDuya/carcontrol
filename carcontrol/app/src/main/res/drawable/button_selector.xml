@@ -1,6 +1,6 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
   
-  <item android:state_pressed="true" android:drawable="@drawable/background_cron" />
-  <item android:drawable="@drawable/background_cron_stroke" />
+  <item android:state_pressed="true" android:drawable="@drawable/background_cron_stroke" />
+  <item android:drawable="@drawable/background_cron" />
   
 </selector>

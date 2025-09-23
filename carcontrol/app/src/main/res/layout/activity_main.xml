@@ -12,7 +12,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:paddingEnd="20dp"
+    android:paddingEnd="15dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp">
 
@@ -27,7 +27,7 @@
       android:id="@+id/button_refresh"
       android:layout_width="50dp"
       android:layout_height="50dp"
-      android:padding="7dp"
+      android:padding="10dp"
       android:src="@drawable/refresh"
       android:tint="@color/onBackground" />
 
@@ -35,7 +35,7 @@
       android:id="@+id/button_add"
       android:layout_width="50dp"
       android:layout_height="50dp"
-      android:padding="8dp"
+      android:padding="12dp"
       android:src="@drawable/plus"
       android:tint="@color/onBackground" />
 
@@ -43,7 +43,7 @@
       android:id="@+id/button_set"
       android:layout_width="50dp"
       android:layout_height="50dp"
-      android:padding="8dp"
+      android:padding="12dp"
       android:src="@drawable/set"
       android:tint="@color/onBackground" />
 

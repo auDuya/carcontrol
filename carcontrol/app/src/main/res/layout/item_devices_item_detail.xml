@@ -67,6 +67,5 @@
           tools:ignore="HardcodedText" />
        </FrameLayout>
       </LinearLayout>
-    </GridLayout>
   </GridLayout>
 </LinearLayout>

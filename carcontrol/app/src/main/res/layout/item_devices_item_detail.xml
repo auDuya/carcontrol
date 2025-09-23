@@ -65,8 +65,8 @@
           android:textColor="@color/onCardBackground"
           android:textSize="@dimen/smallFont"
           tools:ignore="HardcodedText" />
-      </FrameLayout>
-      
-    </LinearLayout>
+       </FrameLayout>
+      </LinearLayout>
+    </GridLayout>
   </GridLayout>
 </LinearLayout>

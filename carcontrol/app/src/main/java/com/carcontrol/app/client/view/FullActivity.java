@@ -114,6 +114,7 @@ public class FullActivity extends Activity {
     if (!clientView.lightState) fullActivity.buttonLightOff.setImageResource(R.drawable.lightbulb);
     fullActivity.buttonLightOff.setOnClickListener(v -> {
       if (clientView.lightState) {
+        clientView.onClose.run();
         clientView.controlPacket.sendLightEvent(Display.STATE_UNKNOWN);
         fullActivity.buttonLightOff.setImageResource(R.drawable.lightbulb);
         clientView.lightState = false;

@@ -43,29 +43,6 @@
       android:text="@string/start_application_transfer"
       android:textColor="@color/button"
       android:textSize="@dimen/smallFont" />
-
-    <LinearLayout
-      android:layout_columnWeight="9"
-      android:layout_width="0dp"
-      android:layout_height="40dp"
-      android:visibility="gone"
-      android:gravity="center_vertical"
-      android:background="@drawable/background_cron_stroke"
-      android:backgroundTint="@color/button" >
-      
-      <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" >
-        <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="10dp"
-          android:text="@string/option_default_full"
-          android:textColor="@color/onCardBackground"
-          android:textSize="@dimen/smallFont"
-          tools:ignore="HardcodedText" />
-       </FrameLayout>
-      </LinearLayout>
+    
   </GridLayout>
 </LinearLayout>

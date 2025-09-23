@@ -43,7 +43,7 @@
       android:id="@+id/button_set"
       android:layout_width="50dp"
       android:layout_height="50dp"
-      android:padding="8dp"
+      android:padding="10dp"
       android:src="@drawable/set"
       android:tint="@color/onBackground" />
 

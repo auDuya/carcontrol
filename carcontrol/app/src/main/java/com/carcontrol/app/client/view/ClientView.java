@@ -169,7 +169,7 @@ public class ClientView implements TextureView.SurfaceTextureListener {
   public void updateMaxSize(Pair<Integer, Integer> maxSize) {
     if (maxSize == null || maxSize.first == 0 || maxSize.second == 0) return;
     this.maxSize = maxSize;
-    if (fullView != null && fullView.fullMaxSize != null || (mode == 1 && device.setResolution))) {
+    if (fullView != null && fullView.fullMaxSize != null || (mode == 1 && device.setResolution)) {
       if (videoSize != null) {
         float fullMaxAspectRatio = (float) fullView.fullMaxSize.first / fullView.fullMaxSize.second;
         float videoAspectRatio = (float) videoSize.first / videoSize.second;
@@ -185,7 +185,7 @@ public class ClientView implements TextureView.SurfaceTextureListener {
   public void updateVideoSize(Pair<Integer, Integer> videoSize) {
     if (videoSize == null || videoSize.first == 0 || videoSize.second == 0) return;
     this.videoSize = videoSize;
-    if (fullView != null && fullView.fullMaxSize != null || (mode == 1 && device.setResolution))) {
+    if (fullView != null && fullView.fullMaxSize != null || (mode == 1 && device.setResolution)) {
       float fullMaxAspectRatio = (float) fullView.fullMaxSize.first / fullView.fullMaxSize.second;
       float videoAspectRatio = (float) videoSize.first / videoSize.second;
       if (Math.abs(fullMaxAspectRatio - videoAspectRatio) < aspectRatioThreshold) {

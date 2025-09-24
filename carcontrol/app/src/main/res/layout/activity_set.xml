@@ -14,7 +14,7 @@
     android:paddingBottom="0dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingEnd="20dp">
+    android:paddingStart="20dp">
     <ImageView
       android:id="@id/back_button"
       android:layout_width="30dp"

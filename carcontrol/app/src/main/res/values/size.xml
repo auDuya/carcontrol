@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <dimen name="round">10dp</dimen>
+  <dimen name="round">18dp</dimen>
   <!--字体-->
   <dimen name="largeFont">22sp</dimen>
   <dimen name="middleFont">22sp</dimen>

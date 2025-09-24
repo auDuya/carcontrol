@@ -36,7 +36,7 @@ public class StartDeviceActivity extends Activity {
                     return;
                 }
             }
-            int mode = AppData.setting.getTryStartDefaultInAppTransfer() || (device.specified_app != null && !device.specified_app.isEmpty()) ? 1 : 0;
+            int mode = (device.specified_app != null && !device.specified_app.isEmpty()) ? 1 : 0;
             new Client(device, usbDevice, mode);
         } else {
             boolean found = false;
@@ -49,7 +49,7 @@ public class StartDeviceActivity extends Activity {
                     } else continue;
                 }
                 found = true;
-                new Client(device, usbDevice, AppData.setting.getTryStartDefaultInAppTransfer() ? 1 : 0);
+                new Client(device, usbDevice, 0);
             }
             if (!found) {
                 Toast.makeText(this, getString(R.string.error_notify), Toast.LENGTH_SHORT).show();

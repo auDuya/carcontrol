@@ -54,10 +54,10 @@
       android:layout_columnWeight="1"
       android:layout_gravity="end"
         android:background="@drawable/button_selector"
-        android:backgroundTint="@color/button"
+        android:backgroundTint="@color/alert"
       android:gravity="center"
       android:text="@string/add_device_scan"
-      android:textColor="@color/alert"
+      android:textColor="@color/button"
       android:textSize="@dimen/smallFont" />
 
   </GridLayout>
@@ -94,10 +94,10 @@
         android:layout_columnWeight="1"
         android:layout_gravity="end"
         android:background="@drawable/button_selector"
-        android:backgroundTint="@color/button"
+        android:backgroundTint="@color/alert"
         android:gravity="center"
         android:text="@string/add_device_scan"
-        android:textColor="@color/alert"
+        android:textColor="@color/button"
         android:textSize="@dimen/smallFont" />
 
   </GridLayout>
@@ -127,10 +127,10 @@
     android:layout_gravity="center_horizontal"
     android:layout_marginTop="10dp"
     android:background="@drawable/button_selector"
-    android:backgroundTint="@color/button"
+    android:backgroundTint="@color/alert"
     android:gravity="center"
     android:text="@string/add_device_button"
-    android:textColor="@color/alert"
+    android:textColor="@color/button"
     android:textSize="@dimen/smallFont" />
 
 </LinearLayout>

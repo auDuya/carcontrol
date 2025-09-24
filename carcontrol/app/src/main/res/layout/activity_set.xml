@@ -15,18 +15,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingEnd="20dp">
-    <LinearLayout
-      android:orientation="vertical"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_weight="1.0" />
-      <ImageView
-        android:id="@id/back_button"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/chevron_left"
-        android:tint="@color/onBackground"
-        android:rotation="180.0" />
+    <ImageView
+      android:id="@id/back_button"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:src="@drawable/chevron_left"
+      android:tint="@color/onBackground" />    
   </LinearLayout>
 
   <ScrollView

@@ -98,7 +98,7 @@ public final class Setting {
   }
 
   public boolean getTurnOffScreenIfStart() {
-    return sharedPreferences.getBoolean("TurnOffScreenIfStart", false);
+    return sharedPreferences.getBoolean("TurnOffScreenIfStart", true);
   }
 
   public void setTurnOffScreenIfStart(boolean value) {

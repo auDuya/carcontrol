@@ -82,7 +82,7 @@ public class ConnectHelper {
             if (status && !needStartDefaultUSB.isEmpty()) {
                 if (!AppData.setting.getShowConnectUSB()) {
                     for (Map.Entry<String, Device> entry : needStartDefaultUSB.entrySet()) {
-                        DeviceListAdapter.startDevice(entry.getValue(), AppData.setting.getTryStartDefaultInAppTransfer() ? 1 : 0);
+                        DeviceListAdapter.startDevice(entry.getValue(),  0);
                         needStartDefaultUSB.remove(entry.getKey());
                     }
                     return;
@@ -124,7 +124,7 @@ public class ConnectHelper {
         if (waitTime == 0) {
             USBView.buttonConfirm.setOnClickListener(v -> {
                 for (Map.Entry<String, Device> entry : needStartDefaultUSB.entrySet()) {
-                    DeviceListAdapter.startDevice(entry.getValue(), AppData.setting.getTryStartDefaultInAppTransfer() ? 1 : 0);
+                    DeviceListAdapter.startDevice(entry.getValue(), 0);
                     needStartDefaultUSB.remove(entry.getKey());
                 }
                 dialog.cancel();
@@ -136,7 +136,7 @@ public class ConnectHelper {
             USBView.buttonConfirm.setOnClickListener(v -> {
                 AppData.uiHandler.removeCallbacks(countdownRunnable);
                 for (Map.Entry<String, Device> entry : needStartDefaultUSB.entrySet()) {
-                    DeviceListAdapter.startDevice(entry.getValue(), AppData.setting.getTryStartDefaultInAppTransfer() ? 1 : 0);
+                    DeviceListAdapter.startDevice(entry.getValue(), 0);
                     needStartDefaultUSB.remove(entry.getKey());
                 }
                 dialog.cancel();

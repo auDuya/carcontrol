@@ -61,7 +61,7 @@
         android:backgroundTint="@color/button"
         android:gravity="center"
         android:text="@string/night_mode_yes"
-        android:textColor="@color/button"
+        android:textColor="@color/alert"
         android:textSize="@dimen/smallFont" />
 
       <Space android:layout_columnWeight="1" />
@@ -73,7 +73,7 @@
         android:backgroundTint="@color/button"
         android:gravity="center"
         android:text="@string/night_mode_no"
-        android:textColor="@color/button"
+        android:textColor="@color/alert"
         android:textSize="@dimen/smallFont" />
     
   </GridLayout>

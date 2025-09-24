@@ -73,7 +73,7 @@ public class FullActivity extends Activity {
 
   @Override
   public void onBackPressed() {
-    Toast.makeText(AppData.main, getString(R.string.error_refused_back), Toast.LENGTH_SHORT).show();
+    Toast.makeText(AppData.main, getString(R.string.error_notify), Toast.LENGTH_SHORT).show();
   }
 
   public void hide() {

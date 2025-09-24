@@ -120,7 +120,7 @@ public class Client {
         keepAliveThread.start();
       }
     });
-    PublicTools.logToast(AppData.main.getString(R.string.loading_text));
+    PublicTools.logToast(AppData.main.getString(R.string.tip_display_mirroring));
     loadingTimeOutThread.start();
     startThread.start();
   }
@@ -188,7 +188,7 @@ public class Client {
       } else throw new Exception("");
     } catch (Exception ignored) {
       changeMode(0);
-      PublicTools.logToast(AppData.main.getString(R.string.error_create_display));
+      PublicTools.logToast(AppData.main.getString(R.string.error_notify));
     }
   }
 
@@ -212,7 +212,7 @@ public class Client {
       if (!specifiedTransferred && !device.specified_app.isEmpty()) {
         String checkApp = Adb.getStringResponseFromServer(device, "getAppMainActivity", "package=" + device.specified_app);
         if (checkApp.isEmpty()) {
-          PublicTools.logToast(AppData.main.getString(R.string.error_app_not_found));
+          PublicTools.logToast(AppData.main.getString(R.string.error_notify));
           throw new Exception("");
         } else {
           int appTaskId = 0;

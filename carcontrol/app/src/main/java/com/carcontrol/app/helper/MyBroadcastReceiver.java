@@ -156,6 +156,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
   private void onConnectUsb(Context context, UsbDevice usbDevice) {
     if (AppData.usbManager==null)return;
     Intent usbPermissionIntent = new Intent(ACTION_USB_PERMISSION);
+    Intent usbPermissionIntent = new Intent(ACTION_UPDATE_DEVICE_LIST);
     usbPermissionIntent.setPackage(AppData.main.getPackageName());
     PendingIntent permissionIntent = PendingIntent.getBroadcast(context, 0, usbPermissionIntent, Build.VERSION.SDK_INT >= Build.VERSION_CODES.S ? PendingIntent.FLAG_MUTABLE : 0);
     AppData.usbManager.requestPermission(usbDevice, permissionIntent);

@@ -8,9 +8,9 @@
   android:gravity="center"
   android:orientation="horizontal"
   android:paddingStart="12dp"
-  android:paddingTop="17dp"
+  android:paddingTop="15dp"
   android:paddingEnd="12dp"
-  android:paddingBottom="17dp">
+  android:paddingBottom="15dp">
 
   <ImageView
     android:id="@+id/device_icon"

@@ -51,7 +51,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
   @Override
   public void onReceive(Context context, Intent intent) {
     String action = intent.getAction();
-    else if (ACTION_SCREEN_OFF.equals(action)) handleScreenOff();
+    if (ACTION_SCREEN_OFF.equals(action)) handleScreenOff();
     else if (ACTION_CONTROL.equals(action)) handleControl(intent);
     else handleUSB(context, intent);
   }

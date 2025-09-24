@@ -151,7 +151,7 @@ public class PublicTools {
       new Thread(() -> {
         ArrayList<String> remoteAppList = Client.getAppList(device, device.isLinkDevice() ? usbDevice : null);
         AppData.uiHandler.post(() -> {
-          if (remoteAppList.isEmpty()) Toast.makeText(context, context.getString(R.string.add_device_scan_specify_app_finish_error), Toast.LENGTH_SHORT).show();
+          if (remoteAppList.isEmpty()) Toast.makeText(context, context.getString(R.string.error_notify), Toast.LENGTH_SHORT).show();
           else {
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
             builder.setTitle(context.getString(R.string.add_device_scan_finish));
@@ -475,19 +475,6 @@ public class PublicTools {
       while (!executor.awaitTermination(1, TimeUnit.SECONDS)) {}
     } catch (InterruptedException ignored) {}
     return scannedAddresses;
-  }
-
-  // 浏览器打开
-  public static void startUrl(Context context,String url) {
-    try {
-      Intent intent = new Intent(Intent.ACTION_VIEW);
-      intent.addCategory(Intent.CATEGORY_BROWSABLE);
-      intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-      intent.setData(Uri.parse(url));
-      context.startActivity(intent);
-    } catch (Exception ignored) {
-      Toast.makeText(context, context.getString(R.string.error_no_browser), Toast.LENGTH_SHORT).show();
-    }
   }
 
   // 获取解码器是否支持

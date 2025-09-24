@@ -12,7 +12,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:paddingEnd="15dp">
+    android:paddingStart="15dp">
 
     <ImageView
       android:id="@+id/button_set"

@@ -180,6 +180,7 @@ public class PublicTools {
       device.specified_app = String.valueOf(itemAddDeviceBinding.specifiedApp.getText());
       if (AppData.dbHelper.getByUUID(device.uuid) != null) AppData.dbHelper.update(device);
       else AppData.dbHelper.insert(device);
+      Intent intent = new Intent();
       intent.setAction(MyBroadcastReceiver.ACTION_UPDATE_DEVICE_LIST);
       deviceListAdapter.update();
       dialog.cancel();

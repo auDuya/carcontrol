@@ -88,7 +88,8 @@
   <string name="error_connect_server">连接失败</string>
   <string name="error_stream_closed">连接断开</string>
   <string name="error_notify">设备错误</string>
-
+  <string name="error_address_error">地址格式错误</string>
+  
   <!-- 提示 -->
   <string name="tip_display_mirroring">屏幕镜像</string>
   <string name="tip_application_transfer">应用流转</string>

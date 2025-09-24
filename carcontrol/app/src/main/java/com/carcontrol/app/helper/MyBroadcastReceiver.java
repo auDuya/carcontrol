@@ -25,6 +25,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
   private static final String ACTION_USB_PERMISSION = "com.carcontrol.app.USB_PERMISSION";
   private static final String ACTION_CONTROL = "com.carcontrol.app.CONTROL";
   private static final String ACTION_SCREEN_OFF = "android.intent.action.SCREEN_OFF";
+  public static final String ACTION_UPDATE_DEVICE_LIST = "top.saymzx.easycontrol.app.UPDATE_DEVICE_LIST";
 
   private DeviceListAdapter deviceListAdapter;
   private ConnectHelper connectHelper;
@@ -36,6 +37,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     filter.addAction(UsbManager.ACTION_USB_DEVICE_ATTACHED);
     filter.addAction(UsbManager.ACTION_USB_DEVICE_DETACHED);
     filter.addAction(ACTION_USB_PERMISSION);
+    filter.addAction(ACTION_UPDATE_DEVICE_LIST);
     filter.addAction(ACTION_CONTROL);
     filter.addAction(ACTION_SCREEN_OFF);
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) context.registerReceiver(this, filter, Context.RECEIVER_EXPORTED);

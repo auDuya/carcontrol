@@ -143,9 +143,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     if (AppData.setting.getEnableUSB()) {
         if (Objects.equals(action, UsbManager.ACTION_USB_DEVICE_ATTACHED)) onConnectUsb(context, usbDevice);
         else if (Objects.equals(action, ACTION_USB_PERMISSION)) if (intent.getBooleanExtra(UsbManager.EXTRA_PERMISSION_GRANTED, false)) onGetUsbPer(usbDevice);
-      
-
-    
+    }
   }
 
   // 检查已连接设备

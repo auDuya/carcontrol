@@ -35,8 +35,8 @@
 
   <ImageView
     android:id="@+id/device_expand"
-    android:layout_width="24dp"
-    android:layout_height="24dp"
+    android:layout_width="26dp"
+    android:layout_height="26dp"
     android:rotation="180"
     android:src="@drawable/chevron_left"
     android:tint="@color/onCardBackground" />

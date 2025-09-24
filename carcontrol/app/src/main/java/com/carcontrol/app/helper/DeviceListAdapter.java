@@ -185,7 +185,7 @@ public class DeviceListAdapter extends BaseExpandableListAdapter {
         AppData.uiHandler.post(this::notifyDataSetChanged);
         checkConnectionExecutor = null;
         if (!startedDefault) {
-          AppData.uiHandler.post(() -> 0));
+          AppData.uiHandler.post(() -> 0);
           startedDefault = true;
         }
       } catch (InterruptedException ignored) {

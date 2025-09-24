@@ -51,10 +51,6 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
   @Override
   public void onReceive(Context context, Intent intent) {
     String action = intent.getAction();
-    if (UsbManager.ACTION_USB_DEVICE_ATTACHED.equals(action)) AppData.uiHandler.postDelayed(() -> onConnectUsb(context, intent), 1000);
-    else if (ACTION_USB_PERMISSION.equals(action) || UsbManager.ACTION_USB_DEVICE_DETACHED.equals(action)) updateUSB();
-    else if (ACTION_UPDATE_DEVICE_LIST.equals(action)) deviceListAdapter.update();
-    
     else if (ACTION_SCREEN_OFF.equals(action)) handleScreenOff();
     else if (ACTION_CONTROL.equals(action)) handleControl(intent);
     else handleUSB(context, intent);
@@ -141,10 +137,15 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     String action = intent.getAction();
     if (usbDevice == null && action != null) return;
     if (Objects.equals(action, UsbManager.ACTION_USB_DEVICE_DETACHED)) onCutUsb(usbDevice);
+    //jjjj
+    if (Objects.equals(action, UsbManager.ACTION_UPDATE_DEVICE_LIST)) onCutUsb(usbDevice); 
+    
     if (AppData.setting.getEnableUSB()) {
         if (Objects.equals(action, UsbManager.ACTION_USB_DEVICE_ATTACHED)) onConnectUsb(context, usbDevice);
         else if (Objects.equals(action, ACTION_USB_PERMISSION)) if (intent.getBooleanExtra(UsbManager.EXTRA_PERMISSION_GRANTED, false)) onGetUsbPer(usbDevice);
-    }
+      
+
+    
   }
 
   // 检查已连接设备

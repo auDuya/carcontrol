@@ -142,39 +142,12 @@ public final class Setting {
     editor.apply();
   }
 
-  public boolean getFillFull() {
-    return sharedPreferences.getBoolean("fillFull", false);
-  }
-
-  public void setFillFull(boolean value) {
-    editor.putBoolean("fillFull", value);
-    editor.apply();
-  }
-
   public boolean getNewMirrorMode() {
     return sharedPreferences.getBoolean("newMirrorMode", true);
   }
 
   public void setNewMirrorMode(boolean value) {
     editor.putBoolean("newMirrorMode", value);
-    editor.apply();
-  }
-
-  public boolean getForceDesktopMode() {
-    return sharedPreferences.getBoolean("ForceDesktopMode", false);
-  }
-
-  public void setForceDesktopMode(boolean value) {
-    editor.putBoolean("ForceDesktopMode", value);
-    editor.apply();
-  }
-
-  public boolean getTryStartDefaultInAppTransfer() {
-    return sharedPreferences.getBoolean("tryStartDefaultInAppTransfer", false);
-  }
-
-  public void setTryStartDefaultInAppTransfer(boolean value) {
-    editor.putBoolean("tryStartDefaultInAppTransfer", value);
     editor.apply();
   }
 

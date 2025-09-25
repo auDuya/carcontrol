@@ -79,6 +79,20 @@
         android:focusable="false"        
         android:src="@drawable/lightbulb_off"
         android:tint="@color/onBackground" />
+      
+      <ImageView
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />      
+
+      <ImageView
+        android:id="@+id/button_close"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start|bottom"
+        android:focusable="false"        
+        android:src="@drawable/x"
+        android:tint="@color/onBackground" />
     </LinearLayout>
 
     <LinearLayout
@@ -98,14 +112,4 @@
     android:focusable="false"    
     android:src="@drawable/menu"
     android:tint="@color/onBackground" />
-
-  <ImageView
-    android:id="@+id/button_close"
-    android:layout_width="35dp"
-    android:layout_height="50dp"
-    android:layout_gravity="start|bottom"
-    android:focusable="false"        
-    android:src="@drawable/x"
-    android:tint="@color/onBackground" />
-
 </FrameLayout>

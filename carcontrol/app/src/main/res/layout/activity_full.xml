@@ -11,29 +11,36 @@
     android:id="@+id/edit_text"
     android:layout_width="10dp"
     android:layout_height="10dp"
-    android:focusable="true"
     android:inputType="textVisiblePassword" />
 
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical">
+    
+    <LinearLayout
+      android:id="@+id/texture_view_layout"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:orientation="horizontal" />
 
     <LinearLayout
       android:id="@+id/nav_bar"
-      android:layout_width="35dp"
-      android:layout_height="match_parent"
-      android:layout_gravity="end"
+      android:layout_width="match_parent"
+      android:layout_height="35dp"
+      android:layout_gravity="bottom"
       android:visibility="gone"
       android:gravity="center"
-      android:orientation="vertical"
-      android:paddingTop="200dp"
-      android:paddingBottom="0dp">
+      android:orientation="horizontal"
+      android:paddingEnd="50dp"
+      android:paddingStart="10dp">
 
       <ImageView
         android:id="@+id/button_switch"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:padding="1dp"
         android:focusable="false"        
@@ -42,8 +49,8 @@
 
       <ImageView
         android:id="@+id/button_home"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:padding="1dp"
         android:focusable="false"        
@@ -52,8 +59,8 @@
 
       <ImageView
         android:id="@+id/button_back"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:padding="1dp"
         android:focusable="false"        
@@ -78,18 +85,12 @@
         android:padding="3dp"
         android:focusable="false"        
         android:src="@drawable/lightbulb_off"
-        android:tint="#DEDEDE" />
-      
-      <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:focusable="false"
-        android:tint="#DEDEDE" />      
+        android:tint="#DEDEDE" />   
 
       <ImageView
         android:id="@+id/button_close"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
         android:padding="0dp"
         android:focusable="false"        
         android:src="@drawable/x"
@@ -97,20 +98,14 @@
       
     </LinearLayout>
 
-    <LinearLayout
-      android:id="@+id/texture_view_layout"
-      android:layout_width="0dp"
-      android:layout_height="match_parent"
-      android:layout_weight="1"
-      android:gravity="center"
-      android:orientation="horizontal" />
+
   </LinearLayout>
 
   <ImageView
     android:id="@+id/button_nav_bar"
     android:layout_width="35dp"
-    android:layout_height="50dp"
-    android:layout_gravity="start|top"
+    android:layout_height="35dp"
+    android:layout_gravity="start|bottom"
     android:focusable="false"    
     android:src="@drawable/menu"
     android:tint="#DEDEDE" />

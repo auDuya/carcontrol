@@ -75,7 +75,6 @@
     android:layout_width="35dp"
     android:layout_height="50dp"
     android:layout_gravity="start|top"
-    android:paddingBottom="30dp"
     android:focusable="false"    
     android:src="@drawable/menu"
     android:tint="#DEDEDE" />
@@ -85,7 +84,7 @@
     android:layout_width="35dp"
     android:layout_height="50dp"
     android:layout_gravity="start|top"
-    android:paddingBottom="30dp"
+    android:paddingTop="30dp"
     android:padding="2dp"
     android:focusable="false"        
     android:src="@drawable/share_out"

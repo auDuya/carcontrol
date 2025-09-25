@@ -39,8 +39,8 @@
 
       <ImageView
         android:id="@+id/button_close"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
         android:padding="0dp"
         android:focusable="false"
         android:src="@drawable/x"
@@ -48,8 +48,8 @@
       
       <ImageView
         android:id="@+id/button_light_off"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:padding="3dp"
         android:focusable="false"        
@@ -58,8 +58,8 @@
 
       <ImageView
         android:id="@+id/button_transfer"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:padding="3dp"
         android:focusable="false"        
@@ -68,8 +68,8 @@
       
       <ImageView
         android:id="@+id/button_back"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:padding="1dp"
         android:focusable="false"        
@@ -78,8 +78,8 @@
       
       <ImageView
         android:id="@+id/button_home"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:padding="2dp"
         android:focusable="false"        
@@ -88,8 +88,8 @@
       
       <ImageView
         android:id="@+id/button_switch"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:padding="1dp"
         android:focusable="false"        
         android:src="@drawable/square"

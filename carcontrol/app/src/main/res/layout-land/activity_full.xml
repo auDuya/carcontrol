@@ -38,7 +38,7 @@
         android:padding="1dp"
         android:focusable="false"        
         android:src="@drawable/square"
-        android:tint="#DEDEDE" />
+        android:tint="@color/onBackground" />
 
       <ImageView
         android:id="@+id/button_home"
@@ -48,7 +48,7 @@
         android:padding="1dp"
         android:focusable="false"        
         android:src="@drawable/o"
-        android:tint="#DEDEDE" />
+        android:tint="@color/onBackground" />
 
       <ImageView
         android:id="@+id/button_back"
@@ -58,7 +58,7 @@
         android:padding="1dp"
         android:focusable="false"        
         android:src="@drawable/caret_left"
-        android:tint="#DEDEDE" />
+        android:tint="@color/onBackground" />
 
       <ImageView
         android:id="@+id/button_transfer"
@@ -68,7 +68,7 @@
         android:padding="2dp"
         android:focusable="false"        
         android:src="@drawable/share_out"
-        android:tint="#DEDEDE" />
+        android:tint="@color/onBackground" />
 
       <ImageView
         android:id="@+id/button_light_off"
@@ -78,7 +78,7 @@
         android:padding="3dp"
         android:focusable="false"        
         android:src="@drawable/lightbulb_off"
-        android:tint="#DEDEDE" />
+        android:tint="@color/onBackground" />
     </LinearLayout>
 
     <LinearLayout
@@ -97,7 +97,7 @@
     android:layout_gravity="start|top"
     android:focusable="false"    
     android:src="@drawable/menu"
-    android:tint="#DEDEDE" />
+    android:tint="@color/onBackground" />
 
   <ImageView
     android:id="@+id/button_close"
@@ -106,6 +106,6 @@
     android:layout_gravity="start|bottom"
     android:focusable="false"        
     android:src="@drawable/x"
-    android:tint="#DEDEDE" />
+    android:tint="@color/onBackground" />
 
 </FrameLayout>

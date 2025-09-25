@@ -29,36 +29,6 @@
       android:orientation="vertical"
       android:paddingTop="150dp"
       android:paddingBottom="150dp">
-
-      <ImageView
-        android:id="@+id/button_switch"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="1dp"
-        android:focusable="false"        
-        android:src="@drawable/square"
-        android:tint="#DEDEDE" />
-
-      <ImageView
-        android:id="@+id/button_home"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="1dp"
-        android:focusable="false"        
-        android:src="@drawable/o"
-        android:tint="#DEDEDE" />
-
-      <ImageView
-        android:id="@+id/button_back"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="1dp"
-        android:focusable="false"        
-        android:src="@drawable/caret_left"
-        android:tint="#DEDEDE" />
     </LinearLayout>
 
     <LinearLayout
@@ -82,20 +52,55 @@
   <ImageView
     android:id="@+id/button_transfer"
     android:layout_width="35dp"
-    android:layout_height="50dp"
+    android:layout_height="35dp"
     android:layout_gravity="start|top"
-    android:paddingTop="30dp"
+    android:paddingTop="100dp"
     android:padding="2dp"
     android:focusable="false"
     android:src="@drawable/share_out"
     android:tint="#DEDEDE" />
+
+
+  <ImageView
+    android:id="@+id/button_switch"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_gravity="start|center_vertical"
+    android:paddingTop="100dp"
+    android:padding="1dp"
+    android:focusable="false"        
+    android:src="@drawable/square"
+    android:tint="#DEDEDE" />
+
+  <ImageView
+    android:id="@+id/button_home"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_gravity="start|center_vertical"
+    android:padding="1dp"
+    android:focusable="false"        
+    android:src="@drawable/o"
+    android:tint="#DEDEDE" />
+
+  <ImageView
+    android:id="@+id/button_back"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:layout_gravity="start|center_vertical"
+    android:paddingBottom="100dp"
+    android:padding="1dp"
+    android:focusable="false"        
+    android:src="@drawable/caret_left"
+    android:tint="#DEDEDE" />
+
+  
   
   <ImageView
     android:id="@+id/button_light_off"
     android:layout_width="35dp"
-    android:layout_height="50dp"
+    android:layout_height="35dp"
     android:layout_gravity="start|bottom"
-    android:paddingBottom="30dp"
+    android:paddingBottom="100dp"
     android:padding="3dp"
     android:focusable="false"
     android:src="@drawable/lightbulb_off"

@@ -27,8 +27,8 @@
       android:visibility="gone"
       android:gravity="center"
       android:orientation="vertical"
-      android:paddingTop="200dp"
-      android:paddingBottom="0dp">
+      android:paddingTop="150dp"
+      android:paddingBottom="150dp">
 
       <ImageView
         android:id="@+id/button_switch"

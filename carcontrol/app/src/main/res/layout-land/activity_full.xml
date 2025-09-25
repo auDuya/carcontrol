@@ -30,15 +30,16 @@
       android:paddingTop="150dp"
       android:paddingBottom="150dp">
     </LinearLayout>
-
-    <LinearLayout
-      android:id="@+id/texture_view_layout"
-      android:layout_width="0dp"
-      android:layout_height="match_parent"
-      android:layout_weight="1"
-      android:gravity="center"
-      android:orientation="horizontal" />
   </LinearLayout>
+
+  
+  <LinearLayout
+    android:id="@+id/texture_view_layout"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="horizontal" />
 
   <ImageView
     android:id="@+id/button_nav_bar"
@@ -59,7 +60,6 @@
     android:focusable="false"
     android:src="@drawable/share_out"
     android:tint="#DEDEDE" />
-
 
   <ImageView
     android:id="@+id/button_switch"
@@ -91,9 +91,7 @@
     android:padding="1dp"
     android:focusable="false"        
     android:src="@drawable/caret_left"
-    android:tint="#DEDEDE" />
-
-  
+    android:tint="#DEDEDE" />  
   
   <ImageView
     android:id="@+id/button_light_off"
@@ -114,5 +112,4 @@
     android:focusable="false"
     android:src="@drawable/x"
     android:tint="#DEDEDE" />
-
 </FrameLayout>

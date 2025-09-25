@@ -33,8 +33,7 @@
       android:layout_gravity="bottom"
       android:visibility="gone"
       android:gravity="center"
-      android:orientation="horizontal" 
-      android:paddingBottom="5dp" >
+      android:orientation="horizontal" >
 
       <ImageView
         android:id="@+id/button_close"

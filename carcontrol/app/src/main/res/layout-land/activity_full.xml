@@ -32,7 +32,7 @@
 
       <ImageView
         android:id="@+id/button_switch"
-        android:layout_width="35dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:padding="1dp"
@@ -86,18 +86,18 @@
     android:layout_gravity="start|top"
     android:paddingTop="30dp"
     android:padding="2dp"
-    android:focusable="false"        
+    android:focusable="false"
     android:src="@drawable/share_out"
-    android:tint="#DEDEDE" />  
+    android:tint="#DEDEDE" />
   
   <ImageView
     android:id="@+id/button_light_off"
-    android:layout_width="35"
+    android:layout_width="35dp"
     android:layout_height="50dp"
     android:layout_gravity="start|bottom"
     android:paddingBottom="30dp"
     android:padding="3dp"
-    android:focusable="false"        
+    android:focusable="false"
     android:src="@drawable/lightbulb_off"
     android:tint="#DEDEDE" />
   
@@ -106,7 +106,7 @@
     android:layout_width="35dp"
     android:layout_height="50dp"
     android:layout_gravity="start|bottom"
-    android:focusable="false"        
+    android:focusable="false"
     android:src="@drawable/x"
     android:tint="#DEDEDE" />
 

@@ -5,8 +5,7 @@
   android:layout_height="match_parent"
   android:background="#0e1926"
   android:keepScreenOn="true"
-  tools:context=".client.view.FullActivity"
-  android:orientation="horizontal">
+  tools:context=".client.view.FullActivity">
 
   <EditText
     android:id="@+id/edit_text"

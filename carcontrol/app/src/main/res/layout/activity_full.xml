@@ -33,7 +33,8 @@
       android:layout_gravity="bottom"
       android:visibility="gone"
       android:gravity="center"
-      android:orientation="horizontal" >
+      android:orientation="horizontal" 
+      android:paddingBottom="5dp" >
 
       <ImageView
         android:id="@+id/button_close"
@@ -42,8 +43,7 @@
         android:layout_height="35"
         android:focusable="false"        
         android:src="@drawable/x"
-        android:tint="@color/onBackground" 
-        android:paddingBottom="5dp" />     
+        android:tint="@color/onBackground" />     
       
       <ImageView
         android:id="@+id/button_light_off"

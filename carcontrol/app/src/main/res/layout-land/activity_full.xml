@@ -29,17 +29,66 @@
       android:orientation="vertical"
       android:paddingTop="200dp"
       android:paddingBottom="0dp">
-  </LinearLayout>
-    
-  <LinearLayout
-    android:id="@+id/texture_view_layout"
-    android:layout_width="0dp"
-    android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:gravity="center"
-    android:orientation="horizontal" />      
-</LinearLayout>
 
+      <ImageView
+        android:id="@+id/button_switch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="1dp"
+        android:focusable="false"        
+        android:src="@drawable/square"
+        android:tint="#DEDEDE" />
+
+      <ImageView
+        android:id="@+id/button_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="1dp"
+        android:focusable="false"        
+        android:src="@drawable/o"
+        android:tint="#DEDEDE" />
+
+      <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="1dp"
+        android:focusable="false"        
+        android:src="@drawable/caret_left"
+        android:tint="#DEDEDE" />
+
+      <ImageView
+        android:id="@+id/button_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:focusable="false"        
+        android:src="@drawable/share_out"
+        android:tint="#DEDEDE" />
+
+      <ImageView
+        android:id="@+id/button_light_off"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:focusable="false"        
+        android:src="@drawable/lightbulb_off"
+        android:tint="#DEDEDE" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/texture_view_layout"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:orientation="horizontal" />
+  </LinearLayout>
 
   <ImageView
     android:id="@+id/button_nav_bar"
@@ -49,67 +98,14 @@
     android:focusable="false"    
     android:src="@drawable/menu"
     android:tint="#DEDEDE" />
-  
-  <ImageView
-    android:id="@+id/button_transfer"
-    android:layout_width="35dp"
-    android:layout_height="35dp"
-    android:layout_gravity="start|top"
-    android:layout_marginTop="80dp"
-    android:padding="2dp"
-    android:focusable="false"
-    android:src="@drawable/share_out"
-    android:tint="#DEDEDE" />
 
-  <ImageView
-    android:id="@+id/button_switch"
-    android:layout_width="35dp"
-    android:layout_height="35dp"
-    android:layout_gravity="start|center_vertical"
-    android:layout_marginBottom="80dp"
-    android:padding="1dp"
-    android:focusable="false"        
-    android:src="@drawable/square"
-    android:tint="#DEDEDE" />
-
-  <ImageView
-    android:id="@+id/button_home"
-    android:layout_width="35dp"
-    android:layout_height="35dp"
-    android:layout_gravity="start|center_vertical"
-    android:padding="1dp"
-    android:focusable="false"        
-    android:src="@drawable/o"
-    android:tint="#DEDEDE" />
-
-  <ImageView
-    android:id="@+id/button_back"
-    android:layout_width="35dp"
-    android:layout_height="35dp"
-    android:layout_gravity="start|center_vertical"
-    android:layout_marginTop="80dp"
-    android:padding="1dp"
-    android:focusable="false"        
-    android:src="@drawable/caret_left"
-    android:tint="#DEDEDE" />  
-  
-  <ImageView
-    android:id="@+id/button_light_off"
-    android:layout_width="35dp"
-    android:layout_height="35dp"
-    android:layout_gravity="start|bottom"
-    android:layout_marginBottom="80dp"
-    android:padding="3dp"
-    android:focusable="false"
-    android:src="@drawable/lightbulb_off"
-    android:tint="#DEDEDE" />
-  
   <ImageView
     android:id="@+id/button_close"
     android:layout_width="35dp"
     android:layout_height="50dp"
     android:layout_gravity="start|bottom"
-    android:focusable="false"
+    android:focusable="false"        
     android:src="@drawable/x"
     android:tint="#DEDEDE" />
+
 </FrameLayout>

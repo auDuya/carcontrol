@@ -25,6 +25,4 @@
 -keep class android.content.IOnPrimaryClipChangedListener{*;}
 -keep class android.view.IRotationWatcher{*;}
 -keep class com.carcontrol.server.Scrcpy{*;}
--keep class com.carcontrol.server.Channel{*;}
 -keep class com.carcontrol.server.helper.FakeContext{*;}
-

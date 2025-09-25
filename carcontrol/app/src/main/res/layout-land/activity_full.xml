@@ -79,22 +79,6 @@
         android:focusable="false"        
         android:src="@drawable/lightbulb_off"
         android:tint="#DEDEDE" />
-      
-      <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:focusable="false"
-        android:tint="#DEDEDE" />      
-
-      <ImageView
-        android:id="@+id/button_close"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:padding="0dp"
-        android:focusable="false"        
-        android:src="@drawable/x"
-        android:tint="#DEDEDE" />
-      
     </LinearLayout>
 
     <LinearLayout
@@ -113,6 +97,15 @@
     android:layout_gravity="start|top"
     android:focusable="false"    
     android:src="@drawable/menu"
+    android:tint="#DEDEDE" />
+
+  <ImageView
+    android:id="@+id/button_close"
+    android:layout_width="35dp"
+    android:layout_height="50dp"
+    android:layout_gravity="start|bottom"
+    android:focusable="false"        
+    android:src="@drawable/x"
     android:tint="#DEDEDE" />
 
 </FrameLayout>

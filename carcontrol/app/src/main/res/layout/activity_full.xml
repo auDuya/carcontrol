@@ -42,7 +42,8 @@
         android:layout_height="35"
         android:focusable="false"        
         android:src="@drawable/x"
-        android:tint="@color/onBackground" />     
+        android:tint="@color/onBackground" 
+        android:paddingBottom="5dp" />     
       
       <ImageView
         android:id="@+id/button_light_off"

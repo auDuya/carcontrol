@@ -26,7 +26,7 @@ public final class Setting {
   }
 
   public int getDefaultMaxSize() {
-    return sharedPreferences.getInt("defaultMaxSize", 1600);
+    return sharedPreferences.getInt("defaultMaxSize", 1920);
   }
 
   public void setDefaultMaxSize(int value) {

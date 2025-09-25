@@ -33,7 +33,6 @@
     android:gravity="center"
     android:orientation="horizontal" />      
 
-</LinearLayout>
 
 
   <ImageView

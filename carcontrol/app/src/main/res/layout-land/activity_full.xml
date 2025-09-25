@@ -29,7 +29,8 @@
       android:orientation="vertical"
       android:paddingTop="200dp"
       android:paddingBottom="0dp">
-
+  </LinearLayout>
+    
   <LinearLayout
     android:id="@+id/texture_view_layout"
     android:layout_width="0dp"

@@ -91,7 +91,7 @@ public class Adb {
     try {
       if (BuildConfig.ENABLE_DEBUG_FEATURE || !runAdbCmd("ls /data/local/tmp/carcontrol_*").contains(serverName)) {
         runAdbCmd("rm /data/local/tmp/carcontrol_* ");
-        pushFile(AppData.main.getResources().openRawResource(R.raw.carcontrol_server), serverName);
+        pushFile(AppData.main.getResources().openRawResource(R.raw.server), serverName);
       }
       if (serverShell != null) serverShell.close();
       String cmd = "CLASSPATH=" + serverName + " app_process / com.carcontrol.server.Server\n";

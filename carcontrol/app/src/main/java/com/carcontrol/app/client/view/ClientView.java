@@ -249,30 +249,8 @@ public class ClientView implements TextureView.SurfaceTextureListener {
   // 更改View的形态
   public void viewAnim(View view, boolean toShowView, int translationX, int translationY, PublicTools.MyFunctionBoolean action) {
     // 创建平移动画
-    view.setTranslationX(toShowView ? translationX : 0);
-    float endX = toShowView ? 0 : translationX;
-    view.setTranslationY(toShowView ? translationY : 0);
-    float endY = toShowView ? 0 : translationY;
-    // 创建透明度动画
-    view.setAlpha(toShowView ? 0f : 1f);
-    float endAlpha = toShowView ? 1f : 0f;
 
-    // 设置动画时长和插值器
-    ViewPropertyAnimator animator = view.animate()
-      .translationX(endX)
-      .translationY(endY)
-      .alpha(endAlpha)
-      .setDuration(toShowView ? 300 : 200)
-      .setInterpolator(toShowView ? new OvershootInterpolator() : new DecelerateInterpolator());
-    animator.withStartAction(() -> {
-      if (action != null) action.run(true);
-    });
-    animator.withEndAction(() -> {
-      if (action != null) action.run(false);
-    });
-
-    // 启动动画
-    animator.start();
+    
   }
 
   @Override

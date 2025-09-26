@@ -246,26 +246,4 @@ public class ClientView implements TextureView.SurfaceTextureListener {
     controlPacket.sendTouchEvent(action, p, (float) x / surfaceSize.first, (float) y / surfaceSize.second, offsetTime);
   }
   
-  @Override
-  public void onSurfaceTextureAvailable(@NonNull SurfaceTexture surfaceTexture, int i, int i1) {
-    // 初始化
-    if (this.surfaceTexture == null) {
-      this.surfaceTexture = surfaceTexture;
-      onReady.run();
-    } else textureView.setSurfaceTexture(this.surfaceTexture);
-  }
-
-  @Override
-  public void onSurfaceTextureSizeChanged(@NonNull SurfaceTexture surfaceTexture, int i, int i1) {
-  }
-
-  @Override
-  public boolean onSurfaceTextureDestroyed(@NonNull SurfaceTexture surfaceTexture) {
-    return false;
-  }
-
-  @Override
-  public void onSurfaceTextureUpdated(@NonNull SurfaceTexture surfaceTexture) {
-  }
-
 }

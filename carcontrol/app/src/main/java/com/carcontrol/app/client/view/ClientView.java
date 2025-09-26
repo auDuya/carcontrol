@@ -246,13 +246,6 @@ public class ClientView implements TextureView.SurfaceTextureListener {
     controlPacket.sendTouchEvent(action, p, (float) x / surfaceSize.first, (float) y / surfaceSize.second, offsetTime);
   }
 
-  // 更改View的形态
-  public void viewAnim(View view, boolean toShowView, int translationX, int translationY, PublicTools.MyFunctionBoolean action) {
-    // 创建平移动画
-
-    
-  }
-
   @Override
   public void onSurfaceTextureAvailable(@NonNull SurfaceTexture surfaceTexture, int i, int i1) {
     // 初始化

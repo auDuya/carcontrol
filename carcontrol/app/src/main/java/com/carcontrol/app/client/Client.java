@@ -72,7 +72,11 @@ public class Client {
     // 初始化
     uuid = device.uuid;
     if (mode == 0) specifiedTransferred = true;
-
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+      handlerThread = new HandlerThread("carcontrol_mediacodec");
+      handlerThread.start();
+      handler = new Handler(handlerThread.getLooper());
+    }
     clientView = new ClientView(device, controlPacket, this::changeMode, () -> {
       status = 1;
       executeStreamInThread.start();

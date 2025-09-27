@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">易控车机</string>
+  <string name="app_name">车控互联</string>
 
   <!-- 主页 -->
   <string name="car_version_message">车控互联</string>

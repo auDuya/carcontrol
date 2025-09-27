@@ -3,7 +3,7 @@
   <string name="app_name">易控车机</string>
 
   <!-- 主页 -->
-  <string name="car_version_message">易控车机</string>
+  <string name="car_version_message">车控互联</string>
 
   <!-- 设置页面 -->
   <string name="set_default">默认参数</string>

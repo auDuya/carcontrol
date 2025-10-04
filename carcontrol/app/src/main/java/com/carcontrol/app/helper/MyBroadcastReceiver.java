@@ -23,7 +23,6 @@ import java.util.Objects;
 public class MyBroadcastReceiver extends BroadcastReceiver {
 
   private static final String ACTION_USB_PERMISSION = "com.carcontrol.app.USB_PERMISSION";
-  public static final String ACTION_UPDATE_DEVICE_LIST = "com.carcontrol.app.UPDATE_DEVICE_LIST";
   private static final String ACTION_CONTROL = "com.carcontrol.app.CONTROL";
   private static final String ACTION_SCREEN_OFF = "android.intent.action.SCREEN_OFF";
 
@@ -37,7 +36,6 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     filter.addAction(UsbManager.ACTION_USB_DEVICE_ATTACHED);
     filter.addAction(UsbManager.ACTION_USB_DEVICE_DETACHED);
     filter.addAction(ACTION_USB_PERMISSION);
-    filter.addAction(ACTION_UPDATE_DEVICE_LIST);
     filter.addAction(ACTION_CONTROL);
     filter.addAction(ACTION_SCREEN_OFF);
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) context.registerReceiver(this, filter, Context.RECEIVER_EXPORTED);
@@ -53,7 +51,6 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     String action = intent.getAction();
     if (ACTION_SCREEN_OFF.equals(action)) handleScreenOff();
     else if (ACTION_CONTROL.equals(action)) handleControl(intent);
-    else if (ACTION_UPDATE_DEVICE_LIST.equals(action)) deviceListAdapter.update();
     else handleUSB(context, intent);
   }
 
@@ -151,7 +148,6 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
   }
 
   // 请求USB设备权限
-  @SuppressLint({"MutableImplicitPendingIntent", "UnspecifiedImmutableFlag"})
   private void onConnectUsb(Context context, UsbDevice usbDevice) {
     if (AppData.usbManager==null)return;
     Intent usbPermissionIntent = new Intent(ACTION_USB_PERMISSION);

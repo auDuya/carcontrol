@@ -24,6 +24,7 @@ KEY_DEFAULT_MUSIC_APP
 
 o8/d
 KEY_PIP_SINGLE_MODE_FORCE_APP_STATE
+    
     const-string v3, "com.byd.automap/com.byd.automap.activity.StartupActivity"
 
     invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -104,8 +105,8 @@ v4, v5, v5, v2    119行
     invoke-virtual {p1, v0, v1}, Lq7/a;->h(Ljava/lang/String;Ljava/lang/Object;)V
 
 
-121  模式
-130  语音
+121 模式
+130 语音
 131 旋转屏幕 长
 132 旋转屏幕
 
@@ -145,20 +146,20 @@ v4, v5, v5, v2    119行
 画中画透明度 跟随悬浮面
 
 
-0x7f0700ad 12  0x7f070097  10
-0x7f0701c1  4    0x7f0701d1   5
-0x7f0701cb 46  0x7f0701d2   50
-0x7f0701dd  6   0x7f070097  10
-0x7f0701d5  52  0x7f0701d2  50
+0x7f0700ad   12   0x7f070097   10
+0x7f0701c1   4    0x7f0701d1   5
+0x7f0701cb   46   0x7f0701d2   50
+0x7f0701dd   6    0x7f070097   10
+0x7f0701d5   52   0x7f0701d2   50
 
-e  0x7f0700b9 130  80  c 0x7f0701f7
-g  0x7f0700da 160  50  e
-h  0x7f070098 100   f    
-j   0x7f0700ae  120       h
-k  0x7f0700da  160 120   i
-q  0x7f0700ae 120    n
-r   0x7f0700c4  140  120   o
-v  0x7f070202  90      q
+e  0x7f0700b9  130   80  c  0x7f0701f7
+g  0x7f0700da  160   50  e
+h  0x7f070098  100       f    
+j  0x7f0700ae  120       h
+k  0x7f0700da  160  120  i
+q  0x7f0700ae  120       n
+r  0x7f0700c4  140  120  o
+v  0x7f070202  90        q
 
 
 
